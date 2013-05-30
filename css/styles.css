@@ -2,24 +2,14 @@
 /*----------------------
 	body
 ----------------------*/
-
 body {
 	font: 1em 'Merriweather Sans', sans-serif;
 	line-height: 1.125;
 	font-weight: 400;
-
-/*	background: #829AB5; /* Old browsers */
-/*	background: -moz-linear-gradient(top, #829AB5 33.3%, #445060 33.3%, #445060 66.6%, #C14543 66.6%, #C14543 100%); /* FF3.6+ */
-/*	background: -webkit-gradient(linear, left top, left bottom, color-stop(3.3%,#829AB5), color-stop(33.3%,#445060), color-stop(66.6%,#445060), color-stop(66.6%,#C14543), color-stop(100%,#C14543)); /* Chrome,Safari4+ */
-/*	background: -webkit-linear-gradient(top, #829AB5 33.3%,#445060 33.3%,#445060 66.6%,#C14543 66.6%,#C14543 100%); /* Chrome10+,Safari5.1+ */
-/*	background: -o-linear-gradient(top, #829AB5 33.3%,#445060 33.3%,#445060 66.6%,#C14543 66.6%,#C14543 100%); /* Opera 11.10+ */
-/*	background: -ms-linear-gradient(top, #829AB5 33.3%,#445060 33.3%,#445060 66.6%,#C14543 66.6%,#C14543 100%); /* IE10+ */
-/*	background: linear-gradient(to bottom, #829AB5 33.3%,#445060 33.3%,#445060 66.6%,#C14543 66.6%,#C14543 100%); /* W3C */
-/*	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#829AB5', endColorstr='#C14543',GradientType=0 ); /* IE6-9 */
 }
 
 #wrapper {
-	background: #829AB5 url("../img/pw_pattern/pw_pattern.png");
+	background: #829AB5 url("../img/wavegrid/wavegrid.png");
 	height: 1000px;
 	position: relative;
 	z-index: 400;
@@ -32,7 +22,6 @@ body {
 ----------------------*/
 header {
 	background: #3C9955;
-	float: left;
 	width: 100%;
 	position: fixed;
 	z-index: 1000;
@@ -40,7 +29,7 @@ header {
 
 nav {
 	margin: 0 auto;
-	width: 1000px;
+	width: 100%;
 }
 
 nav h4 {
@@ -52,7 +41,7 @@ nav h4 {
 nav li {
 	float: right;
 	list-style: none;
-	margin: 0 50px 0 100px;
+	margin: 0 10px 0 150px;
 }
 
 nav a {
@@ -60,84 +49,19 @@ nav a {
 	text-decoration: none;
 }
 
-/*---------
-.intro {
-	background: url("../img/nasty_fabric/nasty_fabric.png") fixed;
-	height: 500px;
-	font-size: 3em;
-	line-height: 150px;
-}
-
-.intro h1 {
-	font: 3em;
-	margin: 45px auto;
-	text-align: center;
-	position: fixed;
-	width: 100%;
-	z-index: 100;
-}
---------*/
-
 
 /*----------------------
 	article
 ----------------------*/
-
-/*------
-.clearfix:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}
-------*/
-
-/*------
-.topborder {
-	background: url("../img/nasty_fabric/nasty_fabric.png");
-	height: 20px;
-	width: 100%;
-	box-shadow: 0 -5px 10px 0;
-	margin-bottom: 20px;
-}
--------*/
-
-
 #main {
-	margin-top: 80px;
+	margin-top: 60px;
 }
 
 #main,
 #info {
-	float: left;
 	background: #3A3A3A;
 	border-radius: 10px;
 	box-shadow: inset 1px 1px 0;
-	width: 100%;
-}
-
-#info {
-	margin: 20px 0;
-}
-
-section a {
-	clear: left;
-	color: #fff;
-	float: left;
-	background: #3A3A3A;
-	border-radius: 10px;
-	box-shadow: 10px 10px 20px;
-	height: 190px;
-	margin: 10px 10px 10px 0;
-	padding: 1%;
-	text-decoration: none;
-	width: 30%;
-
-	-webkit-duration: .5s;
-	-moz-duration: .5s;
-	-o-duration: .5s;
-	transition-duration: .5s;
 }
 
 section h3 {
@@ -156,9 +80,9 @@ section h3 {
 	border-radius: 15px;
 	clear: left;
 	float: left;
-	height: 275px;
-	margin: 10px;
-	padding: 8px;	
+	width: 275px;
+	margin: 1.5%;
+	padding: 1%;	
 }
 
 #main h1 {
@@ -184,42 +108,48 @@ section h3 {
 }
 
 /*----------------------
-	gallery box
+	thirds
 ----------------------*/
-#gallery a:hover,
-#portfolio a:hover,
-#resume a:hover {
-	background: rgba(44,114,158,.9);
+section a {
+	color: #fff;	
+	background: #3A3A3A;
+	border-radius: 10px;
+	box-shadow: 10px 10px 20px;
+	height: 200px;
+	text-decoration: none;
+	width: 30%;
+
+	-webkit-duration: .5s;
+	-moz-duration: .5s;
+	-o-duration: .5s;
+	transition-duration: .5s;
 }
 
+section a:hover {
+	background: rgba(44, 114, 158, .9);
+}
 
-/*----------------------
-	portfolio box
-----------------------*/
 #gallery p,
 #portfolio p,
 #resume p {
-	padding: 1em 1em;
+	padding: 0 1em;
 }
 
-
-/*----------------------
-	resume box
-----------------------*/
-
+#gallery,
+#portfolio,
+#resume {
+}
 
 
 /*----------------------
 	footer
 ----------------------*/
-
 footer {
 	clear: both;
 	float: left;
 	background: #3A3A3A;
 	border-radius: 10px;
 	box-shadow: inset 1px 1px 0;
-	margin: 10px 0;
 	width: 100%;
 }
 
@@ -267,44 +197,63 @@ footer li {
 
 #twitter:hover { 
 	background: #22b1e5;
+}
 
+/*----------------------
+ media queries - medium
+----------------------*/
+@media screen and (max-width : 1024px) {
+	
 
-/*--------------------
-=======
-body {
-	background: #3E6B85;
-	color: #fff;
-	font-family: 'Merriweather Sans', sans-serif;
+img {
+	max-width: 150px;
+}
+
 }
 
 
-h3 {
-	background: #858585;
-	box-shadow: 4px 4px 8px #C5D2DB;
-	color: #F4921E;
-	padding: 10px;
-	font-family: garamond, serif;
-	font-size: 2em;
-	font-variant: small-caps;
-	border-radius: 10px 20px 20px 0;
-	text-indent: 25px;
+/*----------------------
+ media queries - small
+----------------------*/
+@media screen and (max-width : 650px) {
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	width:100%;
 }
 
 
-h1 {
-	border-bottom: 8px solid #858585;
-	color: #F4921E;
-	font: 5em garamond, serif;
-	font-variant: small-caps;
-	text-align: center;
-	text-shadow: 2px 2px 1px #858585;
-}
 
 
-p {
-	text-indent: 35px;
-	line-height: 20px;
-	letter-spacing: -0.5px;
->>>>>>> 81e7e7e2e79cbe5d9493173ed2b7eec82a13233e
-}
-------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

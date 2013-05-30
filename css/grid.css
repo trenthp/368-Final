@@ -30,7 +30,7 @@
 .grid_10,
 .grid_11,
 .grid_12 {
-	margin: 0 20px 10px 0;
+	margin: 1% 2% 1% 0;
 	float: left;
 	display: block;
 }
@@ -39,8 +39,9 @@
 .omega{margin-right:0px;}
 
 .container{
-	width: 1000px; 
+	width: 90%; 
 	margin: auto;
+	max-width: 1000px;
 }
 
 
