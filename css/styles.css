@@ -38,16 +38,16 @@ nav {
 nav h4 {
 	color: #3A3A3A;
 	float: left;
-	margin: 0 1% 1.5% 1%;
+	margin: 1% 0;
 }
 
 nav li {
-	float: right;
 	list-style: none;
 	margin: 0 1% 0 2%;
 }
 
 nav a {
+	float: right;
 	color: #fff;
 	text-decoration: none;
 }
