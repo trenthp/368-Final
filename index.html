@@ -5,11 +5,11 @@
 	<title>Trent Petersen</title>
 	
 
-  <link href='http://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css' media="screen" >
   <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/normalize.css" />
-	<link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/grid.css" />
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen" />
 	
 </head>
 
@@ -28,32 +28,18 @@
   </header>
 
 
-<!--
-  <div class="intro">
-
-    <h1>My name is <br>Trent<br>and... I like to party</h1>
-
-  </div>  
--->
+<div id="wrapper" class="container">
 
 
-<div id="wrapper">
+    <article>
 
-
-<!--
-  <div class="topborder"></div>
--->
-
-
-  <div class="container">
-
-    <article class="grid_12">
-
-        <section id="main" class="grid_12">
+        <section id="main" class="clearfix">
           
-          <img src="img/me.jpg">
-          <h1>Welcome to my portfolio</h1>
-          <p>I am a student at Eastern Washington University. I love my beautiful wife. I also love pineapple.</p>
+          <img src="img/me.jpg" class="grid_3">
+          <div class="grid_9 main">
+            <h1>Welcome to my portfolio</h1>
+            <p>I am a student at Eastern Washington University. I love my beautiful wife. I also love pineapple.</p>
+          </div>
 
         </section>
 
@@ -66,7 +52,7 @@
         </section>
 
 
-        <section id="thirds">
+        <section id="thirds" class="grid_12">
 
           <a href="#" id="gallery" class="grid_4 alpha">
           <h3>Gallery</h3>
@@ -103,8 +89,6 @@
 
     </footer>
 
-
-  </div>
 
 </div>
 
