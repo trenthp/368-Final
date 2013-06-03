@@ -7,15 +7,12 @@ body {
 	line-height: 1.125;
 }
 
-#wrapper {
-	color: #fff;
-}
 
 section h3 {
-	font-family: 'Archivo Black', sans-serif;
-	color: #3C9955;
+	font-family: 'Raleway', sans-serif;
+	color: #8C2E2E;
 	padding: 0 40px;
-	font-size: 1.5em;
+	font-size: 1.75em;
 }
 
 
@@ -23,7 +20,7 @@ section h3 {
 	header
 ----------------------*/
 header {
-	background: #3C9955;
+	background: #838385;
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -35,21 +32,29 @@ nav {
 	width: 100%;
 }
 
-nav h4 {
+.navimage {
+	background: url("../img/logo.png");
+	height: 103px;
+	width: 300px;
+	text-indent: -9999px;
 	color: #3A3A3A;
 	float: left;
-	margin: 1% 0;
+	margin: -10px 0 10px 0;
+}
+
+nav ul {
+	padding-top: 4%;
 }
 
 nav li {
 	list-style: none;
-	margin: 0 1% 0 2%;
 }
 
 nav a {
 	float: right;
 	color: #fff;
 	text-decoration: none;
+	margin-left: 10%;
 }
 
 
@@ -57,14 +62,16 @@ nav a {
 	article
 ----------------------*/
 #main {
-	margin-top: 6%;
+	margin-top: 150px;
+	margin-left: 2%;
 }
 
 #main,
 #info {
-	background: #3A3A3A;
+	background: #FFF;
 	border-radius: 10px;
-	box-shadow: inset 1px 1px 0;
+	/*box-shadow: inset 1px 1px 0;*/
+	margin-bottom: 2%
 }
 
 
@@ -75,15 +82,15 @@ nav a {
 	float: left;
 	background: #3A3A3A;
 	border-radius: 15px;
-	width: 200px;
+	width: 100%;
 	margin: 1.5%;
 }
 
 
 
 #main h1 {
-	font-family: 'Archivo Black', sans-serif;
-	color: #3C9955;
+	font-family: 'Raleway', sans-serif;
+	color: #8C2E2E;
 	font: 4em;
 	text-transform: uppercase;
 }
@@ -92,6 +99,12 @@ nav a {
 /*----------------------
 	info box
 ----------------------*/
+
+/*
+#info {
+	margin-top: 1%;
+}
+
 #info h3 {
 	float: left;
 	padding: .5% 2%;
@@ -102,16 +115,17 @@ nav a {
 #info p {
 	padding: 1%;
 }
+*/
 
 /*----------------------
 	thirds
 ----------------------*/
 section a {
-	color: #fff;	
-	background: #3A3A3A;
+	color: #000;	
+	background: #fff;
 	border-radius: 10px;
-	box-shadow: 10px 10px 20px;
-	height: 200px;
+	box-shadow: 2px 2px 5px;
+	min-height: 200px;
 	text-decoration: none;
 	width: 30%;
 
@@ -122,7 +136,7 @@ section a {
 }
 
 section a:hover {
-	background: rgba(44, 114, 158, .9);
+	background: rgba(131,131,133,.2);
 }
 
 #gallery p,
@@ -143,16 +157,16 @@ section a:hover {
 footer {
 	clear: both;
 	float: left;
-	background: #3A3A3A;
+	background: #838385;
 	border-radius: 10px;
-	box-shadow: inset 1px 1px 0;
+	/*box-shadow: inset 1px 1px 0;*/
 	width: 100%;
 }
 
 footer h3 {
-	color: #3C9955;
+	color: #8C2E2E;
 	float: left;
-	font-family: 'Archivo Black', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	padding: .5% 2%;
 	font-size: 1.5em;
 	text-transform: uppercase;
@@ -160,7 +174,7 @@ footer h3 {
 
 
 footer li {
-	background: #3C9955;
+	background: #3A3A3A;
 	border-radius: 5px;
 	float: left;
 	list-style: none;
@@ -179,6 +193,11 @@ footer li {
 	padding: 4px;
 }
 
+.mail {
+	width: 20px;
+	padding: 5px;
+}
+
 #facebook:hover {
 	background: #3b5998;
 }
@@ -195,12 +214,20 @@ footer li {
 	background: #22b1e5;
 }
 
+#mail:hover { 
+	background: #8C2E2E;
+}
+
 /*----------------------
  media queries - medium
 ----------------------*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1123px) {
 
-
+	#main img{
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+	}
 
 }
 
@@ -224,10 +251,14 @@ footer li {
 		width: 100%;
 	}
 
-	#main img {
+	#main {
+		margin-top: 150px;
+	}
 
-		width: 100px auto;
-		margin: 0 auto;
+	#main img {
+		margin: auto;
+		width: 100%;
+
 	}
 
 }
