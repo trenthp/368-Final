@@ -39,7 +39,7 @@ nav {
 	text-indent: -9999px;
 	color: #3A3A3A;
 	float: left;
-	margin: -10px 0 10px 20px;
+	margin: -10px 0 10px 25px;
 }
 
 nav ul {
@@ -236,7 +236,7 @@ footer li {
 		display: block;
 		max-width: 301px;
 		width: 100%;
-		margin: 0 auto;
+		margin: 10% auto auto auto;
 	}
 
 	#main {
@@ -252,11 +252,42 @@ footer li {
 @media screen and (max-width: 800px) {
 
 	nav a {
+		padding: 15px 20px 0 10px;
+		width: 65%;
+	}
 
+	nav ul {
+		float: left;
+		clear: left;
+		padding: 0 0 0 25px;
+		margin-top: 0;
 	}
 
 	nav li {
-		
+		float: right;
+		clear: left;
+		padding-left: 12px;
+	}
+
+	.navimage {
+		margin: 0 0 -10px 15px;
+	}
+
+	#main {
+		padding: 1% 5%;
+		margin-top: 175px;
+		-webkit-transition: margin .5s;
+	}
+
+	#main img{
+		margin-top: 40%;
+		max-width: 100%;
+	}
+
+	/*for the section buttons to be two-column*/
+	.grid_4 {
+		width: 48%;
+		-webkit-transition: all .5s;
 	}
 
 }
@@ -283,13 +314,8 @@ footer li {
 	}
 
 
-
-	#main {
-		margin-top: 150px;
-	}
-
 	#main img {
-		margin: auto;
+		margin: auto auto auto 20%;
 		max-width: 200px;
 		width: 100%;
 
