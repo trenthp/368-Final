@@ -330,13 +330,23 @@ footer li {
 *********************************/
 
 .illustrator a {
-	margin-top: 60%;
+	background: rgba(0,0,0,.3);
+	display: block;
+	float: left;
 	border-radius: 4px;
 	border: none;
+	min-height: 150px;
+	padding: 4px 0;
+
 }
 
 .illustrator {
-	margin-top: 200px;
+	margin-top: 14%;
+}
+
+.illustrator img {
+	display: block;
+	margin: auto;
 }
 
 
