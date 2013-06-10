@@ -326,6 +326,70 @@ footer li {
 		min-height: 193px;
 	}
 
+	header {
+		position: absolute;
+	}
+
+}
+
+
+/*********************************
+----------------------------------
+	Portfolio
+----------------------------------
+*********************************/
+.illustrator_portfolio {
+	width: 70%;
+	margin: 150px auto 10px auto;
+}
+
+.illustrator_portfolio a {
+	background: rgba(0,0,0,.3);
+	float: left;
+	clear: left;
+	border-radius: 4px;
+	border: none;
+	min-height: 150px;
+	padding: 4px 0;
+	width: 150px;
+	height: 150px;
+}
+
+.illustrator_portfolio img {
+	display: block;
+	margin: auto;
+}
+
+.illustrator_portfolio a,
+.illustrator_portfolio p {
+		margin-top: 20px;
+}
+
+.illustrator_portfolio p {
+	margin-left: 1.5%;
+}
+
+/*********************************
+----------------------------------
+  portfolio media queries - small
+----------------------------------
+*********************************/
+@media screen and (max-width: 800px) {
+
+
+	.illustrator_portfolio {
+		width: 100%;
+		margin-top: 175px;
+	}
+
+	.illustrator_portfolio .grid_2 {
+		width: 150px;
+	}
+
+	.illustrator_portfolio .grid_8 {
+		width: 50%;
+	}
+
 }
 
 /*********************************
@@ -347,7 +411,7 @@ footer li {
 }
 
 .illustrator {
-	margin-top: 150px;
+	margin: 150px auto 10px auto;
 }
 
 .illustrator img {
