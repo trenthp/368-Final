@@ -368,7 +368,7 @@ footer li {
 
 .illustrator_portfolio a,
 .illustrator_portfolio p {
-		margin-top: 20px;
+		margin-bottom: 30px;
 }
 
 .illustrator_portfolio p {
@@ -404,6 +404,47 @@ footer li {
 
 
 }
+
+
+/*********************************
+----------------------------------
+	resume
+----------------------------------
+*********************************/
+.experience {
+	float: left;
+	background: #FFF;
+	border-radius: 10px;
+	margin: 2% 0;
+	padding: 5% 5% 5% 2%;
+}
+
+.experience ul {
+	line-height: 1.5;
+}
+
+.separate {
+	height: 1px;
+	background: #8C2E2E;
+	margin-bottom: 30px;
+}
+
+
+/*********************************
+----------------------------------
+  gallery media queries - small
+----------------------------------
+*********************************/
+@media screen and (max-width: 900px) {
+
+	.experience .grid_2,
+	.experience .grid_8 {
+		width: 100%;
+	}
+
+}
+
+
 
 /*********************************
 ----------------------------------
