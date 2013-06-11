@@ -25,6 +25,10 @@ h1 {
 	font: 4em;
 }
 
+p {
+	line-height: 1.5;
+}
+
 
 /*********************************
 ----------------------------------
@@ -369,11 +373,13 @@ footer li {
 
 .illustrator_portfolio p {
 	margin-left: 1.5%;
+	color: #fff;
 }
 
 .illustrator_portfolio a:hover {
 	color: #000;
 }
+
 
 /*********************************
 ----------------------------------
