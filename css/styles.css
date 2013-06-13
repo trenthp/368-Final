@@ -92,10 +92,6 @@ nav a:hover {
 ----------------------------------
 *********************************/
 #main {
-
-}
-
-#main {
 	background: #FFF;
 	border-radius: 10px;
 	margin: 150px 0 2% 0;
@@ -123,6 +119,102 @@ nav a:hover {
 
 /*********************************
 ----------------------------------
+		Animate!
+----------------------------------
+*********************************/
+h4 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	margin: 2px auto auto 80px;
+	width: 100%;
+	font-size: 1em;
+	color: #fff;
+}
+
+.animate1,
+.animate2,
+.animate3,
+.animate4 {
+	background: #1E5696;
+	border-radius: 5px;
+}
+
+.back1 {
+	background: #8C2E2E;
+}
+
+.back2 {
+	background: #3A3A3A;
+}
+
+.back3 {
+	background: #838385;
+}
+
+.back4 {
+	background: #3C9955;
+}
+
+.animate-container {
+	height: 20px;
+	position: relative;
+	
+	-webkit-perspective: 600;
+	-moz-perspective: 600;
+	-o-perspective: 600;
+	perspective: 600;
+}
+
+.animate {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+
+.animate:hover {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.animate .animate1,
+.animate .animate2,
+.animate .animate3,
+.animate .animate4 {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.animate .back1,
+.animate .back2,
+.animate .back3,
+.animate .back4 {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+
+/*********************************
+----------------------------------
 		thirds
 ----------------------------------
 *********************************/
@@ -136,7 +228,7 @@ section a {
 	width: 30%;
 
 	-webkit-transition: background .5s;
-	-moz-transition: .5s;
+	-moz-transition: background .5s;
 	-o-transition: background .5s;
 	transition: background .5s;
 }
@@ -226,6 +318,7 @@ footer li {
 #mail:hover { 
 	background: #8C2E2E;
 }
+
 
 
 /*********************************
