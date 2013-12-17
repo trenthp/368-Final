@@ -5,6 +5,7 @@
 *********************************/
 body {
 	background: #829AB5 url("../img/grey_wash_wall/grey_wash_wall.png");
+	color: #555;
 	font: 1em 'Merriweather Sans', sans-serif;
 	line-height: 1.125;
 }
@@ -13,14 +14,14 @@ body {
 section h3 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.75em;
-	font-weight: 100;
+	font-weight: 300;
 	color: #8C2E2E;
 	padding: 0 40px;
 }
 
 h1 {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 100;
+	font-weight: 500;
 	color: #8C2E2E;
 	font: 4em;
 }
@@ -29,6 +30,26 @@ p {
 	line-height: 1.5;
 }
 
+body:before {
+	left: 0;
+	background-image: url("../img/before_gradient.png");
+}
+
+body:after {
+	right: 0;
+	background-image: url("../img/after_gradient.png");
+}
+
+body:before,
+body:after {
+	display: block;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100px;
+	content: '';
+	background-repeat: repeat-y;
+}
 
 /*********************************
 ----------------------------------
@@ -38,14 +59,14 @@ p {
 header {
 	background: #BBBDC0;
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	z-index: 1000;
 }
 
 nav {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 100;
+	font-weight: 300;
 	margin: 0 auto;
 	width: 100%;
 }
@@ -82,6 +103,13 @@ nav a {
 
 nav a:hover {
 	color: #1E5696;
+}
+
+.active {
+	background-color: #A1A3A6;
+	border-bottom-color: #6f92ba;
+	color: #000;
+	padding-top: 3px;
 }
 
 
@@ -217,7 +245,7 @@ h4 {
 ----------------------------------
 *********************************/
 section a {
-	color: #000;	
+	color: #555;	
 	background: #fff;
 	box-shadow: 1px 1px 10px;
 	min-height: 283px;
@@ -231,8 +259,7 @@ section a {
 }
 
 section a:hover {
-	background: rgba(131,131,133,.2);
-	color: #fff;
+	background: #BBBDC0;
 }
 
 #gallery p,
