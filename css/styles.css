@@ -4,7 +4,7 @@
 ----------------------------------
 *********************************/
 body {
-	background: #829AB5 url("../img/grey_wash_wall/grey_wash_wall.png");
+	background: #829AB5 url("../img/texture_gray.png");
 	color: #555;
 	font: 1em 'Merriweather Sans', sans-serif;
 	line-height: 1.125;
@@ -120,7 +120,7 @@ nav a:hover {
 ----------------------------------
 *********************************/
 #main {
-	background: #FFF;
+	background: #F0F0F0;
 	margin: 150px 0 2% 0;
 	padding: 2%
 }
