@@ -57,7 +57,7 @@ body:after {
 ----------------------------------
 *********************************/
 header {
-	background: #BBBDC0;
+	background: #A6A8AB;
 	width: 100%;
 	position: absolute;
 	top: 0;
@@ -246,7 +246,7 @@ h4 {
 *********************************/
 section a {
 	color: #555;	
-	background: #fff;
+	background: #F0F0F0;
 	box-shadow: 1px 1px 10px;
 	min-height: 283px;
 	text-decoration: none;
@@ -282,7 +282,7 @@ h1 + p {
 footer {
 	clear: both;
 	float: left;
-	background: #BBBDC0;
+	background: #A6A8AB;
 	width: 100%;
 }
 
