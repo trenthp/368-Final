@@ -4,8 +4,8 @@
 ----------------------------------
 *********************************/
 body {
-	background: #829AB5 url("../img/texture_gray.png");
-	color: #555;
+	background: #8D8D8C url("../img/gray_wood_bg_anchor.jpg") top no-repeat fixed;
+	color: #fff;
 	font: 1em 'Merriweather Sans', sans-serif;
 	line-height: 1.125;
 }
@@ -14,14 +14,14 @@ body {
 section h3 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.75em;
-	font-weight: 300;
+	font-weight: 200;
 	color: #8C2E2E;
 	padding: 0 40px;
 }
 
 h1 {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 500;
+	font-weight: 300;
 	color: #8C2E2E;
 	font: 4em;
 }
@@ -57,7 +57,8 @@ body:after {
 ----------------------------------
 *********************************/
 header {
-	background: #A6A8AB;
+	background: #000;
+	background: rgba(0,0,0,0.3);
 	width: 100%;
 	position: absolute;
 	top: 0;
@@ -71,6 +72,10 @@ nav {
 	width: 100%;
 }
 
+nav h1 {
+	float: left;
+}
+/*
 .navimage {
 	background: url("../img/logo.png") center no-repeat;
 	height: 103px;
@@ -81,19 +86,33 @@ nav {
 	margin: -10px 0 10px 25px;
 }
 
+
+
+
+
+		padding: 0 0 0 25px;
+		margin-top: 2%;
+	}
+
+	nav li {
+		float: right;
+		padding-left: 12px;
+*/
+
 nav ul {
-	padding-top: 4%;
+	padding: 35px 0 0 25px;
 }
 
 nav li {
 	list-style: none;
+	float: right;
+	padding-left: 50px;
 }
 
 nav a {
-	float: right;
 	color: #fff;
 	text-decoration: none;
-	margin: 0 1% 0 10%;
+
 
 	-webkit-transition: color .3s;
 	-moz-transition: color .3s;
@@ -120,8 +139,9 @@ nav a:hover {
 ----------------------------------
 *********************************/
 #main {
-	background: #F0F0F0;
-	margin: 150px 0 2% 0;
+	background: #000;
+	background: rgba(0,0,0,0.3);
+	margin: 54% 0 2% 0;
 	padding: 2%
 }
 
@@ -245,9 +265,9 @@ h4 {
 ----------------------------------
 *********************************/
 section a {
-	color: #555;	
-	background: #F0F0F0;
-	box-shadow: 1px 1px 10px;
+	color: #fff;
+	background: #000;
+	background: rgba(0,0,0,0.3);
 	min-height: 283px;
 	text-decoration: none;
 	width: 30%;
@@ -259,7 +279,7 @@ section a {
 }
 
 section a:hover {
-	background: #BBBDC0;
+	background: rgba(0,0,0,0.5);
 }
 
 #gallery p,
@@ -280,9 +300,10 @@ h1 + p {
 ----------------------------------
 *********************************/
 footer {
+	background: #000;
+	background: rgba(0,0,0,0.3);
 	clear: both;
 	float: left;
-	background: #A6A8AB;
 	width: 100%;
 }
 
@@ -361,6 +382,7 @@ footer li {
 		padding: 5%;
 	}
 
+
 }
 
 
@@ -378,14 +400,12 @@ footer li {
 
 	nav ul {
 		float: left;
-		clear: left;
 		padding: 0 0 0 25px;
-		margin-top: 0;
+		margin-top: 2%;
 	}
 
 	nav li {
 		float: right;
-		clear: left;
 		padding-left: 12px;
 	}
 
