@@ -15,14 +15,14 @@ section h3 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.75em;
 	font-weight: 200;
-	color: #8C2E2E;
+	color: #76daff;
 	padding: 0 40px;
 }
 
 h1 {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 300;
-	color: #8C2E2E;
+	font-weight: 200;
+	color: #76daff;
 	font: 4em;
 }
 
@@ -30,26 +30,6 @@ p {
 	line-height: 1.5;
 }
 
-body:before {
-	left: 0;
-	background-image: url("../img/before_gradient.png");
-}
-
-body:after {
-	right: 0;
-	background-image: url("../img/after_gradient.png");
-}
-
-body:before,
-body:after {
-	display: block;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	width: 100px;
-	content: '';
-	background-repeat: repeat-y;
-}
 
 /*********************************
 ----------------------------------
@@ -60,7 +40,7 @@ header {
 	background: #000;
 	background: rgba(0,0,0,0.3);
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	z-index: 1000;
 }
@@ -74,33 +54,11 @@ nav {
 
 nav h1 {
 	float: left;
+	margin-left: 50px;
 }
-/*
-.navimage {
-	background: url("../img/logo.png") center no-repeat;
-	height: 103px;
-	width: 300px;
-	text-indent: -9999px;
-	color: #3A3A3A;
-	float: left;
-	margin: -10px 0 10px 25px;
-}
-
-
-
-
-
-		padding: 0 0 0 25px;
-		margin-top: 2%;
-	}
-
-	nav li {
-		float: right;
-		padding-left: 12px;
-*/
 
 nav ul {
-	padding: 35px 0 0 25px;
+	padding: 35px 50px 0 25px;
 }
 
 nav li {
@@ -138,9 +96,26 @@ nav a:hover {
 		article
 ----------------------------------
 *********************************/
-#main {
+.pre_article {
+	width: 100%;
+	min-width: 1000px;
+	height: 32px;
+	background: url("../img/divider.png") repeat-x;
+	position: relative;
+	float: left;
+	margin-top: -25px;
+}
+
+article {
+	width: 100%;
+	background: #fff;
+}
+
+ {
 	background: #000;
-	background: rgba(0,0,0,0.3);
+}
+
+#main {
 	margin: 54% 0 2% 0;
 	padding: 2%
 }
@@ -172,8 +147,8 @@ nav a:hover {
 *********************************/
 section a {
 	color: #fff;
-	background: #000;
-	background: rgba(0,0,0,0.3);
+	/*background: #000;
+	background: rgba(0,0,0,0.3);*/
 	min-height: 283px;
 	text-decoration: none;
 	width: 30%;
