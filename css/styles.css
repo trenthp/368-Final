@@ -30,13 +30,6 @@ p {
 	line-height: 1.5;
 }
 
-nav,
-header,
-article,
-section,
-footer {
-	display: block;
-}
 
 /*********************************
 ----------------------------------
@@ -90,6 +83,13 @@ nav a:hover {
 	color: #76daff;
 }
 
+.active {
+	background-color: #A1A3A6;
+	border-bottom-color: #6f92ba;
+	color: #000;
+	padding-top: 3px;
+}
+
 
 
 /*********************************
@@ -111,7 +111,9 @@ nav a:hover {
 article {
 	width: 100%;
 	background: #fff;
-	margin-top: 50%;
+	z-index: 300;
+	position: relative;
+	margin-top: 54%;
 }
 
 section {
@@ -131,6 +133,9 @@ section {
 	z-index: 1000;
 }
 
+.portfolio_pic {
+	width: 90%;
+}
 #main img {
 	float: left;
 	background: #3A3A3A;
@@ -143,56 +148,18 @@ section {
 }
 
 
+
+
 /*********************************
 ----------------------------------
-	Portfolio
+		thirds
 ----------------------------------
 *********************************/
-#thirds {
+section a {
+	width: 31.8%;
 	margin-top: 5%;
 }
 
-section a {
-	width: 31.8%;
-}
-
-.illustrator_portfolio a {
-	display: block;
-	float: left;
-	margin-right: 1%;
-}
-
-.illustrator_portfolio img {
-
-	width: 100%;
-}
-
-.illustrator_portfolio a {
-	margin-bottom: 2%;
-}
-
-.name {
-	position: absolute;
-	text-transform: uppercase;
-	margin-top: 10%;
-	font-size: 1.5em;
-	line-height: 1em;
-	width: 20%;
-	padding: 3% 0 3%;
-	background: #fff;
-	opacity: 0;
-	color: #76daff;
-	vertical-align: center;
-	overflow: hidden;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-
-.illustrator_portfolio a:hover .name {
-
-	opacity: 1;
-}
 
 
 /*********************************
@@ -365,7 +332,48 @@ footer li {
 }
 
 
+/*********************************
+----------------------------------
+	Portfolio
+----------------------------------
+*********************************/
+.illustrator_portfolio a {
+	float: left;
+	margin-right: 1%;
+}
 
+.illustrator_portfolio img {
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+
+.illustrator_portfolio a {
+	margin-bottom: 2%;
+}
+
+.name {
+	position: absolute;
+	text-transform: uppercase;
+	margin-top: 5em;
+	font-size: 1.5em;
+	line-height: 1em;
+	width: 20%;
+	padding: 3% 0 3%;
+	background: #fff;
+	opacity: 0;
+	color: #76daff;
+	vertical-align: center;
+	overflow: hidden;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.illustrator_portfolio a:hover .name {
+
+	opacity: 1;
+}
 
 /*********************************
 ----------------------------------
