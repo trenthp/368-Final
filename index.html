@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="js/jquery-1.7.2.min.js"></script>
   <script src="js/lightbox.js"></script>
-  <link href="css/lightbox.css" rel="stylesheet" />
+  <link href="css/lightbox.css" rel="stylesheet">
 
 	
 </head>
@@ -20,22 +20,28 @@
 <body>
 
 
-  <header>
-    <nav>
-      <a href="index.html"><h1>Trent Petersen Design</h1></a>
+    <header>
+      <h1>
+        <a href="index.html">Trent Holms Petersen</a>
+      </h1>
+    </header>
+    <nav class="cf menu">
       <ul> 
-        <li><a href="resume.html">Resume</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-  </header>
-
-    <div class="pre_article cf"></div>
     
   <article class="cf">
 
 
-      <section id="thirds" class="cf">
+      <section id="portfolio" class="cf">
+
+        <div class="portfolio_intro">
+          <h3>Portfolio</h3>
+          <p>Work from school projects to showcase. There are additions that will be added as time progresses.</p>
+        </div>
 
         <div class="illustrator_portfolio">
           <a href="img/moviePoster.png" rel="lightbox" title="This is a piece of vector work for a made up movie. It would be pretty decent just based off of the title and actors alone, right?"><h3 class="name">Movie Poster</h3><img src="img/Thumbnails/moviePosterThumb.png"></a>
@@ -74,10 +80,8 @@
         <div class="portfolio_pic cf">
         </div>
         <div class="main cf">
-          <h1>Welcome to my portfolio</h1>
-          <p>I am a student at Eastern Washington University studying Visual Communication Design. I am always looking forward to expanding my know&#45;how on all design fronts.</p>
-          <h3>Info</h3>
-          <p>Music is great. I&#39;m all about water and pineapples. I am a super nice guy, and would enjoy collaborating on UX/web/graphic designs. Drop me a line and we&#39;ll chat.</p>
+          <h3>About</h3>
+          <p>I am a student at Eastern Washington University studying Visual Communication Design. I am always looking forward to expanding my know&#45;how on all design fronts. I&#39;m all about water and pineapples. I am a super nice guy, and would enjoy collaborating on UX/web/graphic designs. Drop me a line and we&#39;ll chat.</p>
         </div>
 
       </section>
@@ -86,6 +90,9 @@
 
 
   <footer class="cf">
+
+    <h3>Contact</h3>
+    <p><a href="mailto:trentpetersen@gmail.com">trentpetersen@gmail.com</a></p>
 
     <ul>
       <li><a href="https://www.facebook.com/trent.petersen.16" id="facebook" class="facebook">facebook</a></li>
@@ -96,6 +103,28 @@
 
   </footer>
 
+<script>
+  $(document).ready(function(){
+  
+var menu = document.querySelector('.menu');
+var origOffsetY = menu.offsetTop;
+
+function scroll () {
+  if ($(window).scrollTop() >= origOffsetY) {
+    $('.menu').addClass('sticky');
+    $('.content').addClass('menu-padding');
+  } else {
+    $('.menu').removeClass('sticky');
+    $('.content').removeClass('menu-padding');
+  }  
+  
+  
+}
+
+document.onscroll = scroll;
+
+});
+</script>
 
 </div>
 
