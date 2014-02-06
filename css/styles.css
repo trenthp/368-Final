@@ -21,6 +21,13 @@ h3 {
 	text-transform: uppercase;
 }
 
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5em;
+	font-weight: 200;
+	color: #E6003A;
+}
+
 h1 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
@@ -181,21 +188,34 @@ p {
 	width: 100%;
 }
 
-li.name {
+.illustrator_portfolio div.name {
 	position: absolute;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
+	text-align: center;
 	opacity: 0;
-
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+	background-color: rgba(245, 245, 245, 0.75);
+	background-color: rgba(245, 245, 245, 0.25);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(245, 245, 245, 0.25)), color-stop(100%, #555));
+	background-image: -webkit-linear-gradient(rgba(245, 245, 245, 0.25), #555);
+	background-image: linear-gradient(rgba(245, 245, 245, 0.25), #555);
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	-webkit-transform: translated(0, 0, 0);
 }
 
-.illustrator_portfolio a:hover .name {
+h2 {
+	padding: 1rem;
+	position: relative;
+	opacity: 0;
+	letter-spacing: 1px;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	top: 52%;
+}
 
+a:hover h2,
+a:hover .name {
 	opacity: 1;
 }
 
