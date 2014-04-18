@@ -8,169 +8,126 @@
   <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link href="css/portBox.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/styles.css" type="text/css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="js/jquery-1.7.2.min.js"></script>
-  <script src="js/lightbox.js"></script>
-  <link href="css/lightbox.css" rel="stylesheet">
 
-	
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
 
-
+<!-- Header Start -->
     <header>
-      <h1>
-        <a href="index.html">Trent Holms Petersen</a>
-      </h1>
+      <div class="top">
+        <h1>
+          <a href="index.html">Trent Holms Petersen</a>
+        </h1>
+      </div>
     </header>
-    <nav class="cf menu">
-      <ul> 
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+    <nav class="cf">
+      <ul>
+        <li><a href="#" id="top">Home</a></li> 
+        <li><a href="#" id="portfolio">Portfolio</a></li>
+        <li><a href="#" id="about">About</a></li>
+        <li><a href="#" id="contact">Contact</a></li>
       </ul>
     </nav>
-    
+<!-- Header End -->
+
+
   <article class="cf">
 
-
-      <section id="portfolio" class="cf">
+<!-- Portfolio Start -->
+      <section class="cf">
 
         <div class="portfolio_intro">
-          <h3>Portfolio</h3>
+          <div class="portfolio">
+            <h3>Portfolio</h3>
+          </div>
           <p>Work from school projects to showcase. There are additions that will be added as time progresses.</p>
         </div>
 
 
+        <!-- portBox Handler -->
+        <a href="#" data-display="myProject">My Project</a>
 
-        <ul>
-
-          <li class="illustrator_portfolio">
-              <a href="img/moviePoster.png" rel="lightbox" title="This is a piece of vector work for a made up movie. It would be pretty decent just based off of the title and actors alone, right?">
-                <div class="name">
-                  <h2>Movie Poster</h2>
+        <!-- portBox Content -->
+        <div id="myProject" class="portBox">
+            <div class="project">
+                
+              <div class="project-pics">
+                    
+                    <img src="img/my-site.jpg" alt=""/>
+                    
                 </div>
-                <div class="overlay">
-                  <img src="img/Thumbnails/moviePosterThumb.png" alt="movie poster">
-                </div>
-              </a>
-          </li>
+                
+                <div class="project-info">
+                    <h3>My Awsome Project</h3>
+                    
+                    <p>Short description of the project or the work that went into finishing it.</p>
+                    
+                    <ul>
+                        <li><h4>CLIENT</h4></li>
+                          <li>Dude McMan</li>
+                        <li><h4>ROLE</h4></li>
+                          <li>Stuff, Stuff, More Stuff</li>
+                        <li><h4>SKILLS</h4></li>
+                          <li>this, that, the other</li>
+                    </ul>
+                    
+                    <a href="#" class="project-button">Visit Site</a>
+                
+                </div><!-- Project Info Close -->
+            </div><!-- Project Close -->
+        </div><!-- portBox Close -->
 
-          <li class="illustrator_portfolio">
-            <a href="img/bookJacket.jpg" rel="lightbox" title="I remade the cover of the classic Lord of the Flies. This is one of my favorite books, so I made the dust cover I wish was on the book.">
-              <div class="name">
-                <h2>Book Jacket Flat</h2>
-              </div>
-              <img src="img/Thumbnails/bookJacketThumb.jpg" alt="book jacket flat">
-            </a>
-          </li>
-
-          <li class="illustrator_portfolio">
-            <a href="img/bookJacket3D.jpg" rel="lightbox" title="This is the same dust cover as above, only made into a 3D mockup.">
-              <div class="name">
-                <h2>Book Jacket 3D</h2>
-              </div>
-              <img src="img/Thumbnails/bookJacket3DThumb.jpg" alt="book jacket 3d">
-            </a>
-          </li>
-
-          <li class="illustrator_portfolio">
-            <a href="img/magazine.jpg" rel="lightbox" title="I made a vector version of a 1937 Plymouth Coupe (very classy vehicle). This was put onto a fake magazine cover that I also made.">
-              <div class="name">
-                <h2>Magazine Cover (vector Vehicle)</h2>
-              </div>
-              <img src="img/Thumbnails/magazineThumb.jpg" alt="magazine">
-            </a>
-          </li>
-
-          <li class="illustrator_portfolio">
-            <a href="img/zine.jpg" rel="lightbox" title="This is a cover of a zine that I made, which highlighted various designers. This cover was designed by me, however the photo was not.">
-              <div class="name">
-                <h2>Zine Cover</h2>
-              </div>
-              <img src="img/Thumbnails/zineThumb.jpg" alt="zine">
-            </a>
-          </li>
-
-          <li class="illustrator_portfolio">
-            <a href="img/attorney.jpg" rel="lightbox" title="A logo I made for an attorney. The big box in the middle was made so that the logo could accomodate additional name changes to the firm. There was a version without the name bar as well.">
-              <div class="name">
-                <h2>Attorney Logo</h2>
-              </div>
-              <img src="img/Thumbnails/attorneyThumb.jpg" alt="attorney logo">
-            </a>
-          </li>
-
-          <li class="illustrator_portfolio">
-            <a href="img/magad.jpg" rel="lightbox" title="This is a magazine ad for a drink that I would like to drink. Everything on this was made by me, except the bottle itself (although there was some photoshop brushing done in order to remove the label that was originally on the bottle.">
-              <div class="name">
-                <h2>Magazine Ad</h2>
-              </div>
-              <img src="img/Thumbnails/magadThumb.jpg" alt="magazine ad">
-            </a>
-          </li>
-
-        </ul>
 
 
 
       </section>
+<!-- Portfolio End -->
 
 
-      <section id="main" class="cf">
+<!-- About Start -->
+      <section class="cf s1">
         
         <div class="portfolio_pic cf">
         </div>
         <div class="main cf">
-          <h3>About</h3>
+          <div class="about">
+            <h3>About</h3>
+          </div>
           <p>I am a student at Eastern Washington University studying Visual Communication Design. I am always looking forward to expanding my know&#45;how on all design fronts. I&#39;m all about water and pineapples. I am a super nice guy, and would enjoy collaborating on UX/web/graphic designs. Drop me a line and we&#39;ll chat.</p>
         </div>
 
       </section>
-
+<!-- About End -->
   </article>
 
 
-  <footer class="cf">
-
-    <h3>Contact</h3>
+<!-- Contact Start -->
+  <footer class="cf s2">
+    <div class="contact">
+      <h3>Contact</h3>
+    </div>
     <p><a href="mailto:trentpetersen@gmail.com">trentpetersen@gmail.com</a></p>
 
     <ul>
-      <li><a href="https://www.facebook.com/trent.petersen.16" id="facebook" class="facebook">facebook</a></li>
-      <li><a href="https://plus.google.com/u/0/113071841457857300252/" id="googleplus" class="googleplus">google+</a></li>
-      <li><a href="http://www.linkedin.com/pub/trent-petersen/58/22/357/" id="in" class="in">linkedin</a></li>
-      <li><a href="https://twitter.com/TrentHPetersen" id="twitter" class="twitter">twitter</a></li>
+      <li><a href="https://www.facebook.com/trent.petersen.16" class="facebook">facebook</a></li>
+      <li><a href="https://plus.google.com/u/0/113071841457857300252/" class="googleplus">google+</a></li>
+      <li><a href="http://www.linkedin.com/pub/trent-petersen/58/22/357/" class="in">linkedin</a></li>
+      <li><a href="https://twitter.com/TrentHPetersen" class="twitter">twitter</a></li>
     </ul>
 
   </footer>
+<!-- Contact Start -->
 
-<script>
-  $(document).ready(function(){
-  
-    var menu = document.querySelector('.menu');
-    var origOffsetY = menu.offsetTop;
 
-    function scroll () {
-      if ($(window).scrollTop() >= origOffsetY) {
-        $('.menu').addClass('sticky');
-        $('.content').addClass('menu-padding');
-      } else {
-        $('.menu').removeClass('sticky');
-        $('.content').removeClass('menu-padding');
-      }  
-      
-      
-    }
-
-    document.onscroll = scroll;
-
-});
-</script>
-
-</div>
-
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+  <script src="js/jquery.smint.js" type="text/javascript"></script>
+  <script src="js/portBox.slimscroll.min.js"></script>
+  <script src="js/scripts.js" type="text/javascript"></script>
 </body>
 </html>
