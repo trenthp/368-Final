@@ -13,7 +13,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -39,7 +40,8 @@ h3 {
 	text-transform: uppercase;
 }
 
-p {
+p,
+li {
 	line-height: 1.5;
 }
 
@@ -128,8 +130,6 @@ nav a:hover {
 *********************************/
 article {
 	width: 100%;
-
-	position: relative;
 	text-align: center;
 }
 
@@ -154,6 +154,22 @@ p {
 .portfolio_intro {
 	margin-top: 150px;
 	margin-bottom: 80px;
+}
+
+.links {
+
+	width: 50%;
+	float: left;
+}
+
+.links a {
+	text-decoration: none;
+}
+
+
+
+.links a h3:hover {
+	opacity: 1;
 }
 
 
@@ -299,7 +315,7 @@ footer ul a {
 @media screen and (max-width: 650px) {
 
 	section {
-		width: 98%;
+		width: 100%;
 	}
 
 	p {
@@ -342,6 +358,75 @@ footer ul a {
 	background: #8C2E2E;
 	margin-bottom: 30px;
 }
+
+
+
+
+
+/*********************************
+----------------------------------
+	portBox
+----------------------------------
+*********************************/
+.portBox {
+	background: #eee;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.portBox p,
+.portBox li {
+	color: #555555;
+	font: 1em 'Open Sans', sans-serif;
+	line-height: 1.4;
+}
+
+.portBox h3 {
+	font-size: 1.5em;
+	font-weight: 200;
+	font-weight: 300;
+	font: 4em;
+	color: #bdbdbd;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.project-button {
+	background: #555555;
+	-webkit-box-shadow: inset 0 0 1px 1px #444444;
+	box-shadow: inset 0 0 1px 1px #444444;
+}
+
+.project-button:hover {
+	background: #E6003A;
+	-webkit-box-shadow: inset 0 0 1px 1px #C40032;
+	box-shadow: inset 0 0 1px 1px #C40032;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
