@@ -201,6 +201,10 @@ p {
 	font-weight: 200;
 }
 
+.introimg img {
+	margin-top: 120px;
+	width: 100%;
+}
 
 /*********************************
 ----------------------------------
@@ -208,7 +212,6 @@ p {
 ----------------------------------
 *********************************/
 .portfolio_intro {
-	margin-top: 150px;
 	margin-bottom: 80px;
 }
 
@@ -368,6 +371,10 @@ div.bottom a {
 		width: 90%;
 	}	
 
+	.links h3 {
+		color: #E6003A;
+	}
+
 }
 
 
@@ -382,6 +389,10 @@ div.bottom a {
 
 	.links {
 		width: 100%;
+	}
+
+	.portfolio {
+		padding-top: 20px;
 	}
 
 
@@ -417,6 +428,9 @@ div.bottom a {
 		font-size: 1.25em;
 	}
 
+	.introimg img {
+		margin-top: 100px;
+	}
 
 }
 
