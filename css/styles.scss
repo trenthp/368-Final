@@ -63,6 +63,20 @@ li {
     clear: both;
 }
 
+a {
+	color: #555555;
+	text-decoration: none;
+
+	-webkit-transition: color .3s;
+	-moz-transition: color .3s;
+	-o-transition: color .3s;
+	transition: color .3s;
+
+	&:hover {
+		color: #E6003A;
+	}
+}
+
 
 
 /*********************************
@@ -111,20 +125,6 @@ nav {
 		padding: 0px 15px;
 		display: inline;
 	}
-
-	a {
-		color: #555555;
-		text-decoration: none;
-
-		-webkit-transition: color .3s;
-		-moz-transition: color .3s;
-		-o-transition: color .3s;
-		transition: color .3s;
-	
-		&:hover {
-			color: #E6003A;
-		}
-	}
 	
 }
 
@@ -171,18 +171,6 @@ p {
 .links {
 	width: 50%;
 	float: left;
-
-	a {
-		text-decoration: none;
-
-		h3:hover {
-			color: #E6003A;
-			-webkit-transition: all .8s;
-			-moz-transition: all .8s;
-			transition: all .8s;
-		}
-	}
-
 }
 
 .portfolio {
@@ -449,4 +437,8 @@ div.bottom {
 	}
 }
 
+.portBox p a {
+	text-decoration: none;
+	color: #E6003A;
+}
 
