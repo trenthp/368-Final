@@ -1,5 +1,6 @@
 @import "_normalize";
 @import "_iconfont";
+@import "_flexslider";
 
 /*********************************
 ----------------------------------
@@ -413,18 +414,31 @@ div.bottom {
 
 /*********************************
 ----------------------------------
-	App Page
+	Detail Pages
 ----------------------------------
 *********************************/
-
 .detail-page {
 	margin-top: 120px;
+
+	h3 {
+		color: #E6003A;
+	}
+}
+
+.detail-page .project a {
+	color: #111;
+	border-bottom: 1px solid #555;
+
+	&:hover {
+		color: #E6003A;
+	}
 }
 
 
 .more-info-left {
 	float: left;
 	width: 48%;
+	clear: both;
 	
 	p {
 	color: #555555;
@@ -434,14 +448,29 @@ div.bottom {
 	}
 }
 
+.more-info-right {
+	float: right;
+	width: 46%;
+	
+	p {
+	color: #555555;
+	font: 1em 'Open Sans', sans-serif;
+	line-height: 1.4;
+	width: 100%;
+	}
+}
 
+.previous .project-button {
+	width: 25%;
+	float: left;
+	margin-bottom: 50px;
+}
 
-
-
-
-
-
-
+.next .project-button {
+	width: 25%;
+	float: right;
+	margin-bottom: 50px;
+}
 
 
 
@@ -493,6 +522,14 @@ div.bottom {
 		width: 100%;
 		padding:0;
 		margin-top:40px;
+	}
+
+	.more-info-left {
+		width: 100%;
+	}
+
+	.more-info-right {
+		width: 100%;
 	}
 }
 
@@ -562,9 +599,17 @@ div.bottom {
 		line-height:30px;
 	}
 
-	.more-info-left p {
+	.more-info-left p,
+	.more-info-right p {
 		margin-left: 30%;
 		width: 160%;
+	}
+
+	.more-info-left, 
+	.more-info-right {
+		width: 48%;
+		float: left;
+		clear: both;
 	}
 
 	.about h3,

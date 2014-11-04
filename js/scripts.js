@@ -4,4 +4,8 @@ $(document).ready(function(){
 	
 	$('nav').smint();
 
+	$('.flexslider').flexslider({
+	    animation: "slide"
+	});
+
 });
