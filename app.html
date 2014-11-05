@@ -40,8 +40,23 @@
       <h3>App Project</h3>
       <div>
         <div class="project">
-          <div class="project-pics one-time">
-            <div><img src="img/appiPhone.jpg" alt="sketches"/></div>
+          <div class="project-pics">
+            <div class="flexslider">
+              <ul class="slides">
+                <li data-thumb="img/thumbs/appPreview.jpg">
+                  <img src="img/appPreview.jpg" />
+                </li>
+                <li data-thumb="img/thumbs/appiPhone1.jpg">
+                  <img src="img/appiPhone1.jpg" />
+                </li>
+                <li data-thumb="img/thumbs/appiPhone2.jpg">
+                  <img src="img/appiPhone2.jpg" />
+                </li>
+                <li data-thumb="img/thumbs/appiPhone3.jpg">
+                  <img src="img/appiPhone3.jpg" />
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="project-info">
             <ul>
@@ -50,7 +65,7 @@
               <li><h4>ROLE</h4></li>
               <li>UX/UI Designer &#38; Team Lead</li>
               <li><h4>SKILLS</h4></li>
-              <li>Team Lead | Photoshop | Illustrator</li>
+              <li>Team Lead &#8226; Photoshop &#8226; Illustrator</li>
             </ul>
           </div>
           <div class="more-info-left">
@@ -76,27 +91,6 @@
 
 
 
-      <div class="flexslider">
-        <ul class="slides">
-          <li>
-            <img src="img/appiPhone.jpg" />
-          </li>
-          <li>
-            <img src="img/appiPhone.jpg" />
-          </li>
-          <li>
-            <img src="img/appiPhone.jpg" />
-          </li>
-          <li>
-            <img src="img/appiPhone.jpg" />
-          </li>
-        </ul>
-      </div>
-
-
-
-
-
   </article>
 
 
@@ -116,7 +110,7 @@
 
     <div class="bottom">
       <p>
-        &#169; <a href="http://github.com/trenthp">Trent Petersen</a> &#8226; All Rights Reserved &#8226; With useful plugins borrowed by <a href="http://www.outyear.co.uk/smint/">SMINT</a> &#38; <a href="#">slick</a>.
+        &#169; <a href="http://github.com/trenthp">Trent Petersen</a> &#8226; All Rights Reserved &#8226; With useful plugins borrowed by <a href="http://www.outyear.co.uk/smint/">SMINT</a> &#38; <a href="http://flexslider.woothemes.com/thumbnail-controlnav.html">FlexSlider</a>.
       </p>
       <p>
         I love to contribute where I can. Let me know of any opportunities. Thanks!
@@ -129,7 +123,15 @@
 
   <script src="js/jquery-1.11.0.min.js"></script>
   <script src="js/jquery.flexslider-min.js"></script>
-  <script src="js/jquery.smint.js"></script>
-  <script src="js/scripts.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: "thumbnails"
+      });
+
+    });
+  </script>
 </body>
 </html>

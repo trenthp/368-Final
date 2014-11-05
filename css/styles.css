@@ -499,8 +499,8 @@ table {
 /* Font-face Icons */
 @font-face {
   font-family: 'flexslider-icon';
-  src: url("fonts/flexslider-icon.eot");
-  src: url("fonts/flexslider-icon.eot?#iefix") format("embedded-opentype"), url("fonts/flexslider-icon.woff") format("woff"), url("fonts/flexslider-icon.ttf") format("truetype"), url("fonts/flexslider-icon.svg#flexslider-icon") format("svg");
+  src: url("../fonts/flexslider-icon.eot");
+  src: url("../fonts/flexslider-icon.eot?#iefix") format("embedded-opentype"), url("../fonts/flexslider-icon.woff") format("woff"), url("../fonts/flexslider-icon.ttf") format("truetype"), url("../fonts/flexslider-icon.svg#flexslider-icon") format("svg");
   font-weight: normal;
   font-style: normal; }
 /* FlexSlider Necessary Styles
@@ -1017,26 +1017,6 @@ div.bottom {
 
 /*********************************
 ----------------------------------
-	resume
-----------------------------------
-*********************************/
-.experience {
-  float: left;
-  background: #FFF;
-  border-radius: 10px;
-  margin: 2% 0;
-  padding: 5% 5% 5% 2%; }
-
-.experience ul {
-  line-height: 1.5; }
-
-.separate {
-  height: 1px;
-  background: #8C2E2E;
-  margin-bottom: 30px; }
-
-/*********************************
-----------------------------------
 	Detail Pages
 ----------------------------------
 *********************************/
@@ -1045,10 +1025,12 @@ div.bottom {
   .detail-page h3 {
     color: #E6003A; }
 
-.detail-page .project a {
+.more-info-left a,
+.more-info-right a {
   color: #111;
   border-bottom: 1px solid #555; }
-  .detail-page .project a:hover {
+  .more-info-left a:hover,
+  .more-info-right a:hover {
     color: #E6003A; }
 
 .more-info-left {
@@ -1079,6 +1061,18 @@ div.bottom {
   width: 25%;
   float: right;
   margin-bottom: 50px; }
+
+.flexslider {
+  background: none;
+  border: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+  border-radius: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
 
 /*********************************
 ----------------------------------
@@ -1117,6 +1111,13 @@ div.bottom {
     width: 100%; }
 
   .more-info-right {
+    width: 100%; }
+
+  .previous .project-button,
+  .next .project-button {
+    width: 35%; }
+
+  .flexslider {
     width: 100%; } }
 /*********************************
 ----------------------------------
@@ -1177,4 +1178,8 @@ div.bottom {
 
   .about h3,
   .portfolio h3 {
-    margin-left: 5%; } }
+    margin-left: 5%; }
+
+  .previous .project-button,
+  .next .project-button {
+    width: 48%; } }

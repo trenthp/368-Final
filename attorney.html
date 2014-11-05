@@ -40,27 +40,41 @@
       <div>
         <div class="project">
           <div class="project-pics">
-            <img src="img/attorneyiMac.jpg" alt="sketches"/>
+            <div class="flexslider">
+              <ul class="slides">
+                <li data-thumb="img/thumbs/attorneyiMac.jpg">
+                  <img src="img/attorneyiMac.jpg" />
+                </li>
+                <li data-thumb="img/thumbs/attorneyBrowser.jpg">
+                  <img src="img/attorneyBrowser.jpg" />
+                </li>
+                <li data-thumb="img/thumbs/attorneyBrowser1.jpg">
+                  <img src="img/attorneyBrowser1.jpg" />
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="project-info">
             <ul>
               <li><h4>CLIENT</h4></li>
               <li>Petersen Law Group</li>
               <li><h4>ROLE</h4></li>
-              <li>Designer | Developer</li>
+              <li>Designer &#8226; Developer</li>
               <li><h4>SKILLS</h4></li>
-              <li>HTML | CSS | JS(jQuery)</li>
+              <li>HTML &#8226; CSS &#8226; JS(jQuery)</li>
+              <li><h4>URL</h4></li>
+              <li><a href="http://www.petersenlawgroup.com/">www.petersenlawgroup.com</a></li>
             </ul>
           </div>
           <div class="more-info-left">
             <h5>The Brief</h5>
-            <p>This site is a one-page layout to keep things streamlined to the information that is anything a visitor needs or would be looking for. Responsive Web Design (which I feel is just good practice in any situation on the web). This site went through a few different iterations to match the overall look and feel of the site that the client was hoping for.</p>
+            <p>The client was looking to have a redo of the old website. He knew he wanted an easier to navigate site. There needed to be quick access to information regarding his practice in terms of both what they do and where to find them. It was also very important that people could quickly feel comfortable with himself and his empolyees.</p>
             <h5>The Approach</h5>
-            <p>My approach starts with sketches and lo-fi builds. In this case I am strictly on the design side.  I am team lead and working with the client and developers to create this app. We moved from sketches to wireframes to static mockups. We used <a href="http://www.invisionapp.com/">Invision App</a> to help build out interactive prototypes from our different iterations of prototypes.</p>
+            <p>My approach starts with sketches and then into rapid prototyping in the browser. The information heirarchy is vital to any site, so the idea was to have a flow that would help people feel comfortable with the addition of information as they scroll down the page.</p>
           </div>
           <div class="more-info-right">
             <h5>The Result</h5>
-            <p>The finished product (mainly dealing with the UI) went in a little different direction than what you see here. The app was built with ease of the user in mind. There is a main map page which allows the user to see where they are located in relation to all of the points of the hunt.</p>
+            <p>This site is a one-page layout to keep things streamlined to the information that is anything a visitor needs or would be looking for. It is also Responsive Web Design (which I feel is just good practice in any situation on the web).</p>
           </div>
         </div>
       </div>
@@ -92,7 +106,7 @@
 
     <div class="bottom">
       <p>
-        &#169; <a href="http://github.com/trenthp">Trent Petersen</a> &#8226; All Rights Reserved &#8226; With useful plugins borrowed by <a href="http://www.outyear.co.uk/smint/">SMINT</a> &#38; <a href="#">superbox</a>.
+        &#169; <a href="http://github.com/trenthp">Trent Petersen</a> &#8226; All Rights Reserved &#8226; With useful plugins borrowed by <a href="http://www.outyear.co.uk/smint/">SMINT</a> &#38; <a href="http://flexslider.woothemes.com/thumbnail-controlnav.html">FlexSlider</a>.
       </p>
       <p>
         I love to contribute where I can. Let me know of any opportunities. Thanks!
@@ -105,7 +119,15 @@
 
   <script src="js/jquery-1.11.0.min.js"></script>
   <script src="js/jquery.flexslider-min.js"></script>
-  <script src="js/jquery.smint.js"></script>
-  <script src="js/scripts.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: "thumbnails"
+      });
+
+    });
+  </script>
 </body>
 </html>
