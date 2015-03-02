@@ -919,32 +919,31 @@ body:after {
 body {
   background: #eee;
   color: #555555;
-  font: 1em 'tk-museo-sans', sans-serif;
+  font: 1em 'Open Sans', sans-serif;
   line-height: 1.4;
   margin: 0; }
 
 h1,
 h2,
 h3,
-h4,
-h5,
-li {
-  font-family: 'tk-proxima-nova-alt-ext-cond', sans-serif; }
+h4 {
+  font-family: 'Raleway', sans-serif; }
 
-h1 {
+h1,
+h2 {
   color: #E6003A; }
 
 h2,
 h3 {
-  font-weight: 100; }
+  font-size: 1.75em;
+  font-weight: 200; }
 
 h1 {
-  font-weight: 800;
+  font-weight: 600;
   font: 4em; }
 
 h3 {
-  text-transform: uppercase;
-  font-size: 1.75em; }
+  text-transform: uppercase; }
 
 h5 {
   font-size: 2em; }
@@ -995,8 +994,8 @@ nav {
   padding: 25px 0px;
   border-bottom: 1px solid black;
   width: 100%;
-  font-weight: 100;
-  font-family: 'tk-proxima-nova-alt-ext-cond', sans-serif;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
   top: 74px;
   z-index: 100; }
   nav ul {
@@ -1038,7 +1037,8 @@ section {
 p {
   width: 90%;
   margin: auto;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  font-weight: 200; }
 
 .introimg img {
   margin-top: 90px;
@@ -1061,7 +1061,7 @@ p {
 
 article h5 {
   padding-left: 40px;
-  margin-bottom: .5em; }
+  margin-bottom: 1em; }
 
 .project {
   margin-bottom: 100px;
@@ -1144,6 +1144,7 @@ footer {
     footer p a {
       text-decoration: none;
       color: #E6003A;
+      font-weight: 500;
       font-size: 1.5em; }
   footer ul {
     width: 100%;

@@ -11,7 +11,7 @@
 body {
 	background: #eee;
 	color: #555555;
-	font: 1em 'tk-museo-sans', sans-serif;
+	font: 1em 'Open Sans', sans-serif;
 	line-height: 1.4;
 	margin: 0;
 }
@@ -19,29 +19,28 @@ body {
 h1,
 h2,
 h3,
-h4,
-h5,
-li {
-	font-family: 'tk-proxima-nova-alt-ext-cond', sans-serif;
+h4 {
+	font-family: 'Raleway', sans-serif;
 }
 
-h1 {
+h1,
+h2 {
 	color: #E6003A;
 }
 
 h2,
 h3 {
-	font-weight: 100;
+	font-size: 1.75em;
+	font-weight: 200;
 }
 
 h1 {
-	font-weight: 800;
+	font-weight: 600;
 	font: 4em;
 }
 
 h3 {
 	text-transform: uppercase;
-	font-size: 1.75em;
 }
 
 h5 {
@@ -107,8 +106,8 @@ nav {
 	padding: 25px 0px;
 	border-bottom: 1px solid rgb(0, 0, 0);
 	width: 100%;
-	font-weight: 100;
-	font-family: 'tk-proxima-nova-alt-ext-cond', sans-serif;
+	font-weight: 300;
+	font-family: 'Raleway', sans-serif;
 	top: 74px;
 	z-index: 100;
 	
@@ -165,6 +164,7 @@ p {
 	width: 90%;
 	margin: auto;
 	font-size: 1.5rem;
+	font-weight: 200;
 }
 
 .introimg img {
@@ -194,7 +194,7 @@ p {
 
 article h5 {
 	padding-left: 40px;
-	margin-bottom: .5em;
+	margin-bottom: 1em;
 }
 
 .project {
@@ -302,6 +302,7 @@ footer {
 		a {
 			text-decoration: none;
 			color: #E6003A;
+			font-weight: 500;
 			font-size: 1.5em;
 		}
 	}
