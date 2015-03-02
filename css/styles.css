@@ -926,16 +926,16 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+li {
   font-family: 'tk-proxima-nova-alt-ext-cond', sans-serif; }
 
-h1,
-h2 {
+h1 {
   color: #E6003A; }
 
 h2,
 h3 {
-  font-size: 1.75em;
   font-weight: 100; }
 
 h1 {
@@ -943,7 +943,8 @@ h1 {
   font: 4em; }
 
 h3 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 1.75em; }
 
 h5 {
   font-size: 2em; }
@@ -1060,7 +1061,7 @@ p {
 
 article h5 {
   padding-left: 40px;
-  margin-bottom: 1em; }
+  margin-bottom: .5em; }
 
 .project {
   margin-bottom: 100px;
