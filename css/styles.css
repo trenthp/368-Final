@@ -919,7 +919,7 @@ body:after {
 body {
   background: #eee;
   color: #555555;
-  font: 1em 'tk-museo-sans', 'Open Sans', sans-serif;
+  font: 1em 'tk-museo-sans', sans-serif;
   line-height: 1.4;
   margin: 0; }
 
@@ -927,7 +927,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'tk-proxima-nova-alt-ext-cond', 'raleway', sans-serif; }
+  font-family: 'tk-proxima-nova-alt-ext-cond', sans-serif; }
 
 h1,
 h2 {
@@ -995,7 +995,7 @@ nav {
   border-bottom: 1px solid black;
   width: 100%;
   font-weight: 100;
-  font-family: 'tk-proxima-nova-alt-ext-cond', 'raleway', sans-serif;
+  font-family: 'tk-proxima-nova-alt-ext-cond', sans-serif;
   top: 74px;
   z-index: 100; }
   nav ul {
