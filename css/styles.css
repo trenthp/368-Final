@@ -1186,7 +1186,7 @@ footer {
     background: #0075a1; }
 
 .github {
-  color: #666; }
+  color: #999; }
   .github:hover {
     background: #666; }
 
@@ -1203,9 +1203,9 @@ footer {
 .facebook:hover,
 .googleplus:hover,
 .in:hover,
+.github:hover,
 .twitter:hover,
-.instagram:hover,
-.github:hover {
+.instagram:hover {
   color: #fff; }
 
 div.bottom {
