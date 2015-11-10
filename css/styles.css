@@ -1046,9 +1046,22 @@ p {
   font-size: 1.5rem;
   font-weight: 200; }
 
-.introimg img {
-  margin-top: 90px;
-  width: 100%; }
+.introimg {
+  position: relative;
+  margin-top: 90px; }
+  .introimg img {
+    width: 100%; }
+  .introimg h3 {
+    position: absolute;
+    top: 2%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #fff;
+    font-size: 2.3em;
+    font-weight: 600;
+    text-transform: none;
+    text-align: center; }
 
 /*********************************
 ----------------------------------
@@ -1299,6 +1312,9 @@ div.bottom {
 ----------------------------------
 *********************************/
 @media only screen and (max-width: 950px) {
+  .introimg h3 {
+    font-size: 2em; }
+
   .project-pics {
     width: 100%; }
 
@@ -1325,6 +1341,9 @@ div.bottom {
 ----------------------------------
 *********************************/
 @media screen and (max-width: 740px) {
+  .introimg h3 {
+    font-size: 1.6em; }
+
   .links {
     width: 100%; }
 
@@ -1348,8 +1367,10 @@ div.bottom {
   footer p a {
     font-size: 1.25em; }
 
-  .introimg img {
+  .introimg {
     margin-top: 80px; }
+    .introimg h3 {
+      font-size: 1.3em; }
 
   .project-info {
     text-align: center;
@@ -1382,5 +1403,13 @@ div.bottom {
   .project-button {
     width: 70%;
     margin-left: 15%; } }
+/*********************************
+----------------------------------
+	media queries - smallerer
+----------------------------------
+*********************************/
+@media screen and (max-width: 500px) {
+  .introimg h3 {
+    font-size: 1em; } }
 
 /*# sourceMappingURL=styles.css.map */

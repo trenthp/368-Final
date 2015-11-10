@@ -5,7 +5,7 @@
 	<title>Trent Petersen</title>
 
   <link href="favicon.ico" rel="icon" type="image/x-icon">
-  <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:100,600' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="css/styles.css" type="text/css">
@@ -36,6 +36,7 @@
 
     <div class="introimg">
       <img src="img/waveSunset.svg" alt="wave and sunset">
+      <h3 class="quote"></h3>
     </div>
 
 
@@ -202,6 +203,19 @@
       
       $('nav').smint();
 
+      var limit = 6;
+      var numRand = Math.floor(Math.random()*limit);
+
+      var msg0 = '&#8220; &#39;Don&#39;t try to be original&#59; just try to be good&#46;' + '<br>' + '&#45; Paul Rand&#39; &#8221;' + '<br>' + '&#45; Trent Petersen';
+      var msg1 = 'User Advocate' + '<br>' + 'UX&#47;UI Designer';
+      var msg2 = '&#8220;If I asked people what they wanted, they would have said &#39;Faster Horses&#39;.&#8221;' + '<br>' + '&#45; Henry Ford';
+      var msg3 = '&#8220;You&#39;ve got to start with the customer experience and work backwards to the technology.&#8221;' + '<br>' + '&#45; Steve Jobs';
+      var msg4 = '&#8220;Design can be art. Design can be aesthetics. Design is so simple, that&#39;s why it is so complicated.&#8221;' + '<br>' + '&#45; Paul Rand';
+      var msg5 = '&#8220;Give me six hours to chop down a tree and I will spend the first four sharpening the axe.&#8221;' + '<br>' + '&#45; Abraham Lincoln';
+
+      var randomMsg = eval('msg' + numRand);
+
+      $('.quote').html(randomMsg);
 
     });
   </script>

@@ -167,9 +167,26 @@ p {
 	font-weight: 200;
 }
 
-.introimg img {
+.introimg {
+	position: relative;
 	margin-top: 90px;
-	width: 100%;
+
+	img {
+		width: 100%;
+	}
+
+	h3 {
+		position: absolute;
+		top: 2%;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		color: #fff;
+	    font-size: 2.3em;
+	    font-weight: 600;
+	    text-transform: none;
+	    text-align: center;	
+	}
 }
 
 
@@ -520,6 +537,11 @@ div.bottom {
 ----------------------------------
 *********************************/
 @media only screen and (max-width: 950px){
+	
+	.introimg h3 {
+	    font-size: 2em;
+	}
+
 	.project-pics{
 		width: 100%;
 	}
@@ -558,6 +580,10 @@ div.bottom {
 *********************************/
 @media screen and (max-width: 740px) {
 
+	.introimg h3 {
+	    font-size: 1.6em;
+	}
+
 	.links {
 		width: 100%;
 	}
@@ -594,8 +620,12 @@ div.bottom {
 		font-size: 1.25em;
 	}
 
-	.introimg img {
+	.introimg {
 		margin-top: 80px;
+
+		h3 {
+		    font-size: 1.3em;
+		}
 	}
 
 	.project-info{
@@ -640,9 +670,18 @@ div.bottom {
 }
 
 
+/*********************************
+----------------------------------
+	media queries - smallerer
+----------------------------------
+*********************************/
+@media screen and (max-width: 500px) {
 
+	.introimg h3 {
+	    font-size: 1em;
+	}
 
-
+}
 
 
 
