@@ -935,20 +935,20 @@ h3,
 h4 {
   font-family: 'Raleway', sans-serif; }
 
-h1,
-h2 {
+h1 {
   color: #E6003A; }
-
-h2,
-h3 {
-  font-size: 1.75em;
-  font-weight: 200; }
 
 h1 {
   font-weight: 600;
   font: 4em; }
 
+h2 {
+  text-align: center; }
+
+h2,
 h3 {
+  font-size: 1.75em;
+  font-weight: 200;
   text-transform: uppercase; }
 
 h5 {
