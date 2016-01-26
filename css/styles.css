@@ -1069,7 +1069,8 @@ p {
 ----------------------------------
 *********************************/
 .portfolio_intro {
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  margin-top: 90px; }
   .portfolio_intro a {
     color: #E6003A; }
   .portfolio_intro span {
