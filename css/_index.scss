@@ -1,8 +1,9 @@
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 body {
-	background: #eee;
-	border: 10px solid #666;
+	background: $color-background;
+	border: 2px solid $color-primary;
+	margin: 8px;
 }
 
 header {
