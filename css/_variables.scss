@@ -1,36 +1,56 @@
 /* Variables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 // FONTS
-$font-stack-primary: 'Oswald', sans-serif;
-$font-stack-secondary: 'Lato', sans-serif;
+$font-stack-primary: 'Karla', sans-serif;
 
 
 // COLORS
 $color-primary: #111111;
 $color-secondary: #717171;
-$color-tertiary: #CF4647;
+$color-tertiary: #1C6BE6;
 
 $color-background: #F7F6F4;
 $color-background-footer: #3a3a3a;
 
-
 	// 01
-	$color-primary-01: #33425B; //border
-	$color-secondary-01: #F33535; //background
-	$color-tertiary-01: #fff; //font
+	$color-primary-01: #2EB872; //green
+	$color-secondary-01: #F33535; //--
+	$color-tertiary-01: #fff; //--
 
 	// 02
-	$color-primary-02: #4C5374; //border
-	$color-secondary-02: #F1E58A; //background
-	$color-tertiary-02: #4C5374; //font
+	$color-primary-02: #F84040; //red
+	$color-secondary-02: #F1E58A; //--
+	$color-tertiary-02: #4C5374; //--
 
 	// 03
-	$color-primary-03: #11BFAE; //border
-	$color-secondary-03: #1B3C59; //background
-	$color-tertiary-03: #F2F2F0; //font
+	$color-primary-03: #1C6BE6; //blue
+	$color-secondary-03: #1B3C59; //--
+	$color-tertiary-03: #F2F2F0; //--
 
 	// 04
-	$color-primary-04: #0032d2; //border
-	$color-secondary-04: #e5eeff; //background
-	$color-tertiary-04	: #666; //font
+	$color-primary-04: #F7C04A; //yellow
+	$color-secondary-04: #e5eeff; //--
+	$color-tertiary-04: #666; //--
 
+	// process
+	$color-process-primary: #0032D2; //blueprint edge
+	$color-process-secondary: #E5EEFF; //blueprint paper
+
+
+// BOX SHADOW LEVELS
+$shadow-level-01:	0px 1px 4px rgba(0,0,0,.1),
+					0px 2px 3px rgba(0,0,0,.12),
+					0px 1px 3px rgba(0,0,0,.14);
+$shadow-level-02:	0px 3px 6px rgba(0,0,0, 0.1),
+					0px 4px 5px rgba(0,0,0, 0.12),
+					0px 3px 5px rgba(0,0,0, 0.14);
+$shadow-level-03:	0 1px 1px rgba(0,0,0,0.15), 
+					0 2px 2px rgba(0,0,0,0.15), 
+					0 4px 4px rgba(0,0,0,0.15), 
+					0 8px 8px rgba(0,0,0,0.15);
+$shadow-level-04:	0 1px 1px rgba(0,0,0,0.11), 
+					0 2px 2px rgba(0,0,0,0.11), 
+					0 4px 4px rgba(0,0,0,0.11), 
+					0 8px 8px rgba(0,0,0,0.11), 
+					0 16px 16px rgba(0,0,0,0.11), 
+					0 32px 32px rgba(0,0,0,0.11);

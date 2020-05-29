@@ -2,28 +2,12 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 body {
 	background: $color-background;
-	border: 2px solid $color-primary;
-	margin: 8px;
+	/*border: 2px solid $color-primary;
+	margin: 8px;*/
 }
 
-header {
-	margin: 64px;
-
-	h2 a {
-		border-bottom: none;
-	
-		&:hover {
-			border-bottom: none;
-		}
-	
-	}
-
-}
-
-@media (max-width: 550px) {
-	header {
-		margin: 40px;
-	}
+.header {
+	margin-top: 120px;
 }
 
 @media (max-width: 900px) {
@@ -34,79 +18,31 @@ header {
 	}
 }
 
-
-
-
-
-/* Grid Section
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-h5 span {
-	font-style: italic;
-	font-weight: 400;
+header h1 {
+	margin-bottom: 8px;
 }
 
-.grid-page {
-	overflow: hidden;
+
+
+
+
+
+.intro {
+	margin-top: 72px;
 }
 
-img {
-	max-width: 100%;
-}
+.logo-wrapper {
+	max-width: 112px;
 
-a img {
-	border: 4px solid $color-background;
-
-	-webkit-transition: border .3s;
-	-moz-transition: border .3s;
-	-o-transition: border .3s;
-	transition: border .3s;
-
-	&:hover {
-		border: 4px solid $color-tertiary;
+	svg {
+		width: 100%;
+		height: 100%;
 	}
-
 }
 
-.responsive-image{
-    width: 100%;
-    background-size: 100% 100%;
-} 
 
-
-
-
-
-
-/* Footer
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-footer {
-	background: $color-background-footer;
-}
-
-.contact {
-	padding-top: 80px;
-	padding-bottom: 64px;
-	text-align: center;
-
-	p {
-		color: $color-secondary;
-	}
-
-	a {
-		border-bottom: 1px dotted #fff;
-		color: #fff;
-		text-decoration: none;
-
-		-webkit-transition: color border-bottom .3s;
-		-moz-transition: color .3s;
-		-o-transition: color .3s;
-		transition: color .3s;
-
-		&:hover {
-			border-bottom: 1px dotted $color-tertiary;
-			color: #CF4647;
-		}
-	}
+div.social p {
+	margin-bottom: 16px;
 }
 
 div.social a {
@@ -117,31 +53,310 @@ div.social a:hover {
 	border-bottom: none;
 }
 
-.icon {
-	color: $color-secondary;
-	display: inline-block;
-	font-size: 24px;
-	width: 1em;
-	height: 1em;
-	stroke-width: 0;
-	stroke: currentColor;
-	fill: currentColor;
-	vertical-align: middle;
+.social > .row {
+	margin-bottom: 8px;
+}
 
-	-webkit-transition: color .3s;
-	-moz-transition: color .3s;
-	-o-transition: color .3s;
-	transition: color .3s;
-	
-	&:hover {
+.social-icon svg {
+	width: 24px;
+	height: 24px;
+	margin-left: 24px;
+	padding-right: 16px;
+}
+
+a.social-icon svg {
+	color: $color-primary;
+	fill: $color-primary;
+	transition: 240ms;
+}
+
+a.social-icon:hover svg {
 		color: $color-tertiary;
+		fill: $color-tertiary;
 	}
 
-	&:first-child {
-		margin-right: 10px;
+
+
+
+/* Grid Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.case-studies {
+	margin-top: 120px;
+}
+
+.left-title {
+	margin-top: 8px;
+}
+
+
+
+.case-card {
+	background: #fff;
+	border: 3px solid $color-primary;
+	box-shadow: $shadow-level-03;
+	margin-bottom: 64px;
+	transition: 240ms;
+	width: 100%;
+
+	&:hover {
+		box-shadow: $shadow-level-04;
+	    transform: translateY(-1px);
 	}
-	
-	&:last-child {
-	  	margin-left: 10px;
+
+	a {
+		border-bottom: none;
+
+		&:hover {
+			border-bottom: none;
+		}
+	}
+
+	h5 {
+		padding: 16px 16px 16px;
+		margin-bottom: 0;
+
+		span {
+			font-weight: 400;
+			padding-right: 16px;
+		}
 	}
 }
+
+.img-holder {
+	background: $color-tertiary;
+	text-align: center;
+
+	img {
+		width: 88%;
+	}
+}
+
+.responsive-image{
+    width: 100%;
+    background-size: 100% 100%;
+} 
+
+
+
+.news-card {
+
+
+		.img-holder {
+			background: $color-primary-01;
+			padding: 24px 0 32px;
+		}
+
+		a {
+			color: $color-primary;
+
+			-webkit-transition: all .3s;
+			-moz-transition: all .3s;
+			-o-transition: all .3s;
+			transition: all .3s;
+
+		&:hover {
+			color: $color-primary;
+		}
+	}
+}
+
+.sales-card {
+
+		.img-holder {
+			background: $color-primary-02;
+			padding: 64px 0 32px;
+		}
+
+		a {
+			color: $color-primary;
+
+			-webkit-transition: all .3s;
+			-moz-transition: all .3s;
+			-o-transition: all .3s;
+			transition: all .3s;
+
+		&:hover {
+			color: $color-primary;
+		}
+	}
+}
+
+.purchase-card {
+
+		.img-holder {
+			background: $color-primary-03;
+			padding: 64px 0 32px;
+		}
+
+		a {
+			color: $color-primary;
+
+			-webkit-transition: all .3s;
+			-moz-transition: all .3s;
+			-o-transition: all .3s;
+			transition: all .3s;
+
+		&:hover {
+			color: $color-primary;
+		}
+	}
+}
+
+.consultancy-card {
+
+		.img-holder {
+			background: $color-primary-04;
+			padding: 48px 0 32px;
+		}
+
+		a {
+			color: $color-primary;
+
+			-webkit-transition: all .3s;
+			-moz-transition: all .3s;
+			-o-transition: all .3s;
+			transition: all .3s;
+
+		&:hover {
+			color: $color-primary;
+		}
+	}
+}
+
+
+
+.about {
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+
+.process-card {
+	background: $color-process-secondary;
+	border: 3px solid $color-process-primary;
+
+		h5 span {
+		    padding-right: 8px;
+		}
+
+		.img-holder {
+			background: $color-process-secondary !important;
+			padding: 48px 0 32px;
+		}
+
+		a {
+			color: $color-process-primary;
+
+			-webkit-transition: all .3s;
+			-moz-transition: all .3s;
+			-o-transition: all .3s;
+			transition: all .3s;
+		}
+
+		&:hover {
+			color: $color-primary;
+		}
+	
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1525px) {
+	header h1 {
+		font-size: 4.5rem;
+	}
+	.logo-wrapper {
+		max-width: 104px;
+	}
+	.intro {
+		margin-top: 64px;
+	}
+}
+@media (max-width: 1366px) {
+	header h1 {
+		font-size: 4rem;
+	}
+	.logo-wrapper {
+		max-width: 96px;
+	}
+	.intro {
+		margin-top: 48px;
+	}
+}
+@media (max-width: 1206px) {
+	header h1 {
+		font-size: 3.75rem;
+	}
+}
+@media (max-width: 1128px) {
+	.header {
+		margin-top: 80px;
+	}
+	.case-studies {
+	    margin-top: 80px;
+	}
+	.about {
+	    margin-top: 80px;
+	    margin-bottom: 80px;
+	}
+}
+@media (max-width: 550px) {
+	.header {
+		margin-top: 48px;
+	}
+	.logo-wrapper {
+	    max-width: 88px;
+	}
+	header h1 {
+	    margin-bottom: 16px;
+	}
+	.intro {
+	    margin-top: 24px;
+	}
+	.case-studies {
+	    margin-top: 48px;
+	}
+	.img-holder {
+	    padding: 16px 0 16px;
+	}
+	.sticky {
+		top: -40px !important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

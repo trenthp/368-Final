@@ -6,8 +6,13 @@
 
 /* Global
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Karla', sans-serif;
+	font-size: 1.75rem;
 	font-weight: 400;
 }
 
@@ -17,18 +22,21 @@ h3,
 h4,
 h6 {
 	color: $color-primary;
-	font-family: 'Oswald', sans-serif;
 }
 
 h1 {
+	font-size: 5rem;
 	font-weight: 700;
-	font-size: 40px;
+}
+
+h2 {
+	font-size: 3rem;
+	font-weight: 700;
 }
 
 h5 {
 	font-size: 2rem;
 	font-weight: 700;
-	margin-bottom: .5rem;
 }
 
 p {
@@ -36,19 +44,31 @@ p {
 }
 
 a {
-	border-bottom: 1px dotted $color-secondary;
-	color: $color-secondary;
+	border-bottom: none;
+	color: $color-tertiary;
 	text-decoration: none;
+}
 
-	-webkit-transition: color border-bottom .3s;
-	-moz-transition: color .3s;
-	-o-transition: color .3s;
-	transition: color .3s;
+.link{
+  position: relative;
+}
 
-	&:hover {
-		border-bottom: 1px dotted $color-tertiary;
-		color: #CF4647;
-	}
+.link:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #fff;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+
+.link:hover:after{
+  width: 100%;
+  left: 0;
+  background: #fff;
 }
 
 .link-dark {
@@ -58,3 +78,107 @@ a {
 .link-light {
 	color: #999;
 }
+
+.shadow-level-01 {
+	box-shadow: $shadow-level-01;
+}
+
+.shadow-level-02 {
+	box-shadow: $shadow-level-02;
+}
+
+img {
+	width: 100%;
+}
+
+svg.social-icon {
+	width: 24px;
+	height: 24px;
+	margin-left: 24px;
+	padding-right: 16px;
+}
+
+.social a svg.social-icon {
+    background: $color-secondary;
+    padding: 8px;
+
+	-webkit-transition: background .3s;
+	-moz-transition: background .3s;
+	-o-transition: background .3s;
+	transition: background .3s;
+
+    &:hover {
+    	background: $color-tertiary;
+	}
+}
+
+.sticky {
+	position:-webkit-sticky; 
+	position:sticky; 
+	top: 40px;
+}
+
+hr {
+	border-top: 3px solid $color-primary;
+}
+
+
+a:hover .link-underline {
+		border-bottom: 1px dotted $color-tertiary;
+		color: $color-tertiary;
+}
+
+.logo-shadow {
+	box-shadow: none;
+	transition: 240ms;
+}
+
+a:hover .logo-shadow {
+		box-shadow: $shadow-level-02;
+	    transform: translateY(-1px);
+}
+
+div.social a {
+	border-bottom: none;
+}
+
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer {
+	background: $color-primary;
+}
+.contact {
+padding-top: 80px;
+padding-bottom: 80px;
+text-align: center;
+
+	p {
+		color: $color-secondary !important;
+	}
+
+	a {
+		font-family: $font-stack-primary;
+		color: $color-tertiary !important;
+		text-decoration: none;
+
+		-webkit-transition: color border-bottom .3s;
+		-moz-transition: color .3s;
+		-o-transition: color .3s;
+		transition: color .3s;
+
+		&:hover {
+			border-bottom: 1px dotted $color-tertiary;
+			color: $color-primary-01;
+		}
+	}
+
+	div.social a {
+		border-bottom: none;
+	}
+}
+
+
+
+
+
