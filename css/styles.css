@@ -1367,6 +1367,10 @@ a.social-icon:hover svg {
   .case-studies {
     margin-top: 48px; }
 
+  .case-card {
+    margin-bottom: 40px;
+    width: 99%; }
+
   .img-holder {
     padding: 16px 0 16px; }
 
@@ -1377,7 +1381,22 @@ a.social-icon:hover svg {
     padding: 24px 0 8px; }
 
   .purchase-card .img-holder {
-    padding: 24px 0 8px; } }
+    padding: 24px 0 8px; }
+
+  .about {
+    margin-top: 40px;
+    margin-bottom: 40px; } }
+@media (max-width: 420px) {
+  .case-studies {
+    margin-top: 40px; }
+
+  .case-card {
+    margin-bottom: 32px;
+    width: 98%; }
+
+  .about {
+    margin-top: 32px;
+    margin-bottom: 32px; } }
 body {
   background: #F7F6F4;
   color: #111111;

@@ -306,6 +306,7 @@ a.social-icon:hover svg {
 		margin-top: 64px;
 	}
 }
+
 @media (max-width: 1366px) {
 	header h1 {
 		font-size: 4rem;
@@ -317,11 +318,13 @@ a.social-icon:hover svg {
 		margin-top: 48px;
 	}
 }
+
 @media (max-width: 1206px) {
 	header h1 {
 		font-size: 3.75rem;
 	}
 }
+
 @media (max-width: 1128px) {
 	.header {
 		margin-top: 80px;
@@ -355,6 +358,7 @@ a.social-icon:hover svg {
 	    width: 54%;
 	}	
 }
+
 @media (max-width: 768px) {
 	.news-card .img-holder {
 	    padding: 8px 0 8px;
@@ -379,6 +383,7 @@ a.social-icon:hover svg {
 	    width: 54%;
 	}	
 }
+
 @media (max-width: 550px) {
 	.header {
 		margin-top: 32px;
@@ -395,6 +400,10 @@ a.social-icon:hover svg {
 	.case-studies {
 	    margin-top: 48px;
 	}
+	.case-card {
+		margin-bottom: 40px;
+		width: 99%;
+	}
 	.img-holder {
 	    padding: 16px 0 16px;
 	}
@@ -407,10 +416,25 @@ a.social-icon:hover svg {
 	.purchase-card .img-holder {
 	    padding: 24px 0 8px;
 	}
+	.about {
+	    margin-top: 40px;
+	    margin-bottom: 40px;
+	}
 }
 
-
-
+@media (max-width: 420px) {
+	.case-studies {
+		margin-top: 40px;
+	}
+	.case-card {
+		margin-bottom: 32px;
+		width: 98%;
+	}
+	.about {
+	    margin-top: 32px;
+	    margin-bottom: 32px;
+	}
+}
 
 
 
