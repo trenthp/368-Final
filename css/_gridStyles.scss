@@ -43,14 +43,43 @@ body {
 		font-weight: 700;
 		margin-left: 24px;
 	}
+}
 
-	/*span.nav-this {
+
+
+.bottom-nav-group {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 16px;
+	margin-left: 0;
+	margin-top: 32px;
+
+	.nav-button {
+		border: 2px solid $color-primary;
+		box-shadow: $shadow-level-01;
+		background: #ffffff;
+		padding: 8px 24px;
+		transition: 240ms;
+
+		&:hover {
+			box-shadow: $shadow-level-03;
+		    transform: translateY(-1px);
+		}
+
+		span.arrow-next {
+			padding-left: 16px;
+		}
+
+		span.arrow-back {
+			padding-right: 16px;
+		}
+	}
+
+	a {
+		color: $color-primary;
 		font-weight: 700;
-		height: 48px;
-		text-align: center;
-		padding: 8px;
-		margin-left: 24px;
-	}*/
+	}
 }
 
 .logo-box h1 {
@@ -281,11 +310,6 @@ body.consultancy-page {
 
 
 
-
-
-
-
-
 /* process blueprint
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 body.process-page {
@@ -308,19 +332,11 @@ body.process-page {
 		text-align: right;
 	}
 
-	@media (max-width: 550px) {
-		header,
-		header .five {
-			text-align: center;
-		}
 
-		.process-img>div:last-child {
-			margin-top: 24px;
-		}
-	}
 
 	.process {
 		margin-top: 48px;
+		padding-top: 0;
 		padding-bottom: 48px;
 	}
 
@@ -339,13 +355,40 @@ body.process-page {
 		width: 64%;
 	}
 
-	svg {
+	article {
+		background: $color-process-secondary;
+	}
+
+	.case-page-hero div > svg,
+	.process div > svg {
 		width: 56%;
 		top: 0;
 	}
 
-	article {
-		background: $color-process-secondary;
+	.bottom-nav-icons {
+		display: flex;
+		justify-content: center;
+		padding-top: 16px;
+		margin-left: 0;
+		margin-top: 32px;
+
+		.nav-button {
+			color: $color-process-primary;
+			border: 2px solid $color-process-primary;
+			box-shadow: $shadow-level-01;
+			background: $color-process-secondary;
+			padding: 8px 24px;
+			transition: 240ms;
+
+			&:hover {
+				box-shadow: $shadow-level-03;
+			    transform: translateY(-1px);
+			}
+		}
+
+		a {
+			color: $color-process-primary;
+		}
 	}
 
 
@@ -356,6 +399,7 @@ body.process-page {
 		border-top: 1px dotted $color-process-primary;
 		border-bottom: 1px dotted $color-process-primary;
 		padding-top: 48px;
+		padding-bottom: 32px;
 
 		span {
 			color: $color-process-primary;
@@ -405,6 +449,232 @@ body.process-page {
 }
 
 }
+
+
+
+
+
+
+@media (max-width: 1200px) {
+	.process {
+	    padding-bottom: 64px;
+	}
+	body.news-page .article-news,
+	body.sales-page .article-sales,
+	body.purchase-page .article-purchase,
+	body.consultancy-page .article-consultancy {
+	    padding-top: 88px;
+	}
+	body.news-page .article-news .brief,
+	body.sales-page .article-sales .brief,
+	body.purchase-page .article-purchase .brief,
+	body.consultancy-page .article-consultancy .brief {
+	    margin-bottom: 24px;
+	}
+	body.news-page .article-news .approach,
+	body.news-page .article-news .result,
+	body.sales-page .article-sales .approach,
+	body.sales-page .article-sales .result, 
+	body.purchase-page .article-purchase .approach,
+	body.purchase-page .article-purchase .result,
+	body.consultancy-page .article-consultancy .approach,
+	body.consultancy-page .article-consultancy .result {
+	    margin-top: 64px;
+	    margin-bottom: 32px;
+	}
+	br {
+		display: none;
+	}
+	body.process-page .case-page-hero div > svg,
+	body.process-page .process div > svg {
+	    width: 80%;
+	}
+	body.process-page img {
+	    width: 100%;
+	}
+	.article-process .one {
+		width: 5%;
+	}
+	.article-process .three {
+		width: 100%;
+		margin-left: 0;
+	}
+	.article-process .five {
+		width: 39%;
+	}
+	.article-process .nine {
+		width: 100%;
+	}
+}
+
+
+@media (max-width: 800px) {
+	.process .six.columns {
+		width: 100%;
+		margin-left: 0;	
+	}
+}
+
+
+@media (max-width: 620px) {
+	.six.columns.logo-box {
+		width: 100%;
+	}
+	.logo-box h1 {
+	    font-size: 3rem;
+	}
+	.nav-icons {
+		display: none;
+	}
+	.process h1 {
+		font-size: 4rem;
+	}
+	body.process-page img {
+	    width: 100%;
+	}
+	body.process-page .process {
+	    margin-top: 24px;
+	    padding-bottom: 40px;
+	}
+		body.process-page img {
+	    width: 100%;
+	}
+	.article-process .one {
+		width: 20%;
+	}
+	.article-process .five {
+		width: 72%;
+	}
+	.news-page .logo-wrapper,
+	.sales-page .logo-wrapper,
+	.purchase-page .logo-wrapper,
+	.consultancy-page .logo-wrapper {
+	    max-width: 64px;
+	}
+
+	.news-page h1,
+	.sales-page h1,
+	.purchase-page h1,
+	.consultancy-page h1 {
+	    margin-bottom: 4px;
+	}
+}
+
+
+@media (max-width: 570px) {
+	span.left-arrow {
+		display: none;
+	}
+}	
+
+
+@media (max-width: 550px) {
+	.process h1 {
+	    font-size: 3.75rem;
+	}
+
+	.process {
+		padding-top: 24px;
+	    padding-bottom: 48px;
+	}
+
+	body.news-page .article-news,
+	body.sales-page .article-sales,
+	body.purchase-page .article-purchase,
+	body.consultancy-page .article-consultancy {
+	    padding-top: 64px;
+	}
+
+	body.news-page .article-news .contributions {
+	    margin-top: 40px;
+	}
+
+	.bottom-nav-group {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-around;
+
+		.bottom-nav-icons:first-child .nav-button {
+			text-align: left;
+		}
+		.bottom-nav-icons:last-child .nav-button {
+			text-align: right;
+		}
+
+		.bottom-nav-icons {
+			width: 80%;
+		}
+
+		.bottom-nav-icons:last-child {
+			margin-bottom: 16px;
+		}
+	}
+}
+
+
+@media (max-width: 420px) {
+	.article-process .one {
+		width: 16%;
+	}
+	.article-process .five {
+		width: 72%;
+		margin-left: 16px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -29,6 +29,10 @@ header h1 {
 
 .intro {
 	margin-top: 72px;
+
+	p:nth-child(2) {
+		margin-bottom: 16px;
+	}
 }
 
 .logo-wrapper {
@@ -45,17 +49,6 @@ div.social p {
 	margin-bottom: 16px;
 }
 
-div.social a {
-	border-bottom: none;
-}
-
-div.social a:hover {
-	border-bottom: none;
-}
-
-.social > .row {
-	margin-bottom: 8px;
-}
 
 .social-icon svg {
 	width: 24px;
@@ -73,8 +66,32 @@ a.social-icon svg {
 a.social-icon:hover svg {
 		color: $color-tertiary;
 		fill: $color-tertiary;
+}
+
+.social-button {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 24px;
+/*	border: 2px solid $color-primary;
+	box-shadow: $shadow-level-01;
+	background: $color-background;
+	transition: 240ms;
+
+	&:hover {
+		box-shadow: $shadow-level-03;
+	    transform: translateY(-1px);
+	} */
+
+	svg {
+		width: 24px;
+		height: 24px;
 	}
 
+	span {
+		border-bottom: 1px dotted $color-background;
+	}
+}
 
 
 
@@ -101,6 +118,11 @@ a.social-icon:hover svg {
 	&:hover {
 		box-shadow: $shadow-level-04;
 	    transform: translateY(-1px);
+	}
+
+	&:active {
+		box-shadow: $shadow-level-01;
+	    transform: translateY(1px);
 	}
 
 	a {
@@ -239,8 +261,16 @@ a.social-icon:hover svg {
 		}
 
 		.img-holder {
+			display: flex;
+			justify-content: space-around;
+			align-items: flex-start;
 			background: $color-process-secondary !important;
-			padding: 48px 0 32px;
+			padding: 48px 40px 40px;
+
+			img:first-child {
+				margin-right: 40px;
+				width: 44%;
+			}
 		}
 
 		a {
@@ -303,16 +333,61 @@ a.social-icon:hover svg {
 	    margin-top: 80px;
 	    margin-bottom: 80px;
 	}
+	.news-card .img-holder {
+	    padding: 8px 0 16px;
+	}
+	.sales-card .img-holder {
+	    padding: 32px 0 16px;
+	}
+	.purchase-card .img-holder {
+	    padding: 32px 0 16px;
+	}
+	.consultancy-card .img-holder {
+	    padding: 24px 0 8px;
+	}
+	.process-card .img-holder {
+	    padding: 16px 40px 32px;
+	}
+	.process-card .img-holder img:first-child {
+	    width: 46%;
+	}
+	.process-card .img-holder img:last-child {
+	    width: 54%;
+	}	
+}
+@media (max-width: 768px) {
+	.news-card .img-holder {
+	    padding: 8px 0 8px;
+	}
+	.sales-card .img-holder {
+	    padding: 16px 0 8px;
+	}
+	.purchase-card .img-holder {
+	    padding: 16px 0 8px;
+	}
+	.consultancy-card .img-holder {
+	    padding: 16px 0 0px;
+	}
+	.process-card .img-holder {
+	    padding: 8px 40px 24px;
+	}
+	.process-card .img-holder img:first-child {
+	    width: 46%;
+	    margin-right: 24px;
+	}
+	.process-card .img-holder img:last-child {
+	    width: 54%;
+	}	
 }
 @media (max-width: 550px) {
 	.header {
-		margin-top: 48px;
+		margin-top: 32px;
 	}
 	.logo-wrapper {
 	    max-width: 88px;
 	}
 	header h1 {
-	    margin-bottom: 16px;
+	    margin-bottom: 8px;
 	}
 	.intro {
 	    margin-top: 24px;
@@ -325,6 +400,12 @@ a.social-icon:hover svg {
 	}
 	.sticky {
 		top: -40px !important;
+	}
+	.sales-card .img-holder {
+	    padding: 24px 0 8px;
+	}
+	.purchase-card .img-holder {
+	    padding: 24px 0 8px;
 	}
 }
 
