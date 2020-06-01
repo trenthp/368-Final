@@ -4,10 +4,10 @@
 
   <meta charset="utf-8">
   <title>Trent Petersen | UX+UI Product Design</title>
-  <meta name="description" content="Trent Holms Petersen is an UX+UI Product Designer and consultant.">
+<!--  <meta name="description" content="Trent Holms Petersen is an UX+UI Product Designer and consultant.">
   <meta name="author" content="Trent Petersen">
   <meta name="keywords" content="designer, design, web design, ux design, ui design, product design, responsive design, responsive web design, user experience, ux, interface design, ui, information design, content strategy, website, html, css, holistic design">
-
+-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -85,7 +85,7 @@
           </a>
           <a href="sales.html">
             <div class="nav-button">
-              case study 02<span class="arrow-next">→</span>
+              <span class="nav-text-hide">case study </span>02<span class="arrow-next">→</span>
             </div>
           </a>
         </div>
@@ -103,10 +103,10 @@
   
     <div class="row">
       <div class="six columns">
-        <h5>In order for sales people to have the best idea to who they are trying to sell, leads should have plenty of information readily available.</h5>
+        <h5>Take a wild idea and deliver something of value.</h5>
       </div>
       <div class="six columns">
-        <h5>This app was designed to get understandable information in front of the seller easily, and as a quick reference (for those on-the-fly encounters).</h5>
+        <h5></h5>
       </div>      
     </div>
   </div>
@@ -124,22 +124,18 @@
         <h4>the brief</h4>
       </div>
       <div class="eight columns">
-        <p>This client's needs were to collect data pulled from different sources and pool everything into an app that presented the sales person with all the information possible.</p>
-        <p>This allows the seller to adapt their pitch in the best way possible.</p>
+        <p>The client proposed that we build a “fake news detector” which would help assist their analysts in market research.</p>
         <p><span>*due to the nature of work, sometimes it is necessary to hide key information about clients</span></p>
       </div>        
     </div>
 
     <div class="row">
       <div class="nine columns">
-        <img srcset="
-          img/sales1.png 1x, 
-          img/sales1@2x.png 2x
-        " alt="sales target app">
+        <img srcset="img/news1.png" alt="screen of news analysis article detail">
       </div>
       <div class="three columns sticky">
         <h5><span class="left-arrow">← </span>about this screen</h5>
-        <h6>This page gives a breakdown of key segments and markets in which the target companies operates.</h6>
+        <h6>View of an article detail page where an analyst uses aggregated and processed information to aid their work.</h6> 
       </div>
     </div>
 
@@ -148,36 +144,74 @@
         <h4>the approach</h4>
       </div>
       <div class="eight columns">
-        <p>Collecting all of the types of information was important, so it started there.</p>
-        <p>After I got a snapshot of everything that a sales person would need and be ble to get their hands on, then began the process of laying it all out to make cohesive groups.</p>
-        <p>The next big step was to make sure we had data management handled correctly.</p>
-        <p>No one wants old and outdated data. Working closely with the developer, we hammered out a way to track the data coming in and dropping the old.</p>
+        <p class="understand-title-fix"><strong>understand</strong></p>
+        <p>I had to start with some tough questions:</p>
+        <ul>
+          <li>Does such a thing as a fake news detector exist?</li>
+          <li>If not, why has no one solved this before?</li>
+        </ul>
+        <p>You may or may not be surprised to learn that, no, there is no such thing as a “fake news detector”. It has been talked about plenty, and there is a lot of information about fake news, the problems we face with it, and various teams working to create a detector.</p>
+        <p>Early conversations with the client exposed very useful information, and from these discussions I started to create the scope of the project, gather requirements, build user stories, plan workflows, etc.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="nine columns">
+        <img srcset="img/news2.png" alt="news analysis app">
+      </div>
+      <div class="three columns sticky">
+        <h5><span class="left-arrow">← </span>about this screen</h5>
+        <h6>A Project screen showing a list of added articles and project notes.</h6>
+      </div>
+    </div>
+    <div class="row approach">
+      <div class="four columns four-disappear">
+        <h4></h4>
+      </div>
+      <div class="eight columns">
+        <p><strong>ideate</strong></p>
+        <p>Once the client and I uncovered the core problems they were facing, we could start discussing how to approach a solution. We worked together to come up with a compromise between the improbable full-fledged fake news detector and a product that still helps to solve their problems.</p>
+        <p>Throughout this time, it was important to deep dive into research and discovery to define the parameters. I started researching current attempts to create this “detector”, thinking through what output can be expected from a fake news detector, and what could be done to get us as close an approximation as possible.</p>
+        <p>I mapped out structures for the algorithms the developers would need to build. We worked closely together to check for feasibility as well as ways to improve any of the processes.</p>
+        <p>Throughout this project we had to continually consider both the systems of things (“how” things work) as well as the problems being faced (the “why” behind what we’re working on).</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="nine columns">
+        <img srcset="img/news3.png" alt="news analysis app">
+      </div>
+      <div class="three columns sticky">
+        <h5><span class="left-arrow">← </span>about this screen</h5>
+        <h6>A public facing article with a public analysis. Releasing public facing analysis of articles were planned for later phases.</h6>
+      </div>
+    </div>
+    <div class="row approach">
+      <div class="four columns four-disappear">
+        <h4></h4>
+      </div>
+      <div class="eight columns">
+        <p><strong>design</strong></p>
+        <p>With a plan of action in place on how to deliver value, and the requirements and user stories mapped out, design got underway.</p>
+        <ul><p>Designs included:</p>
+          <li>Admin & User Management (with multiple user types and their permissions)</li>
+          <li>Article & Project Management</li>
+          <li>Version control for old & updated articles</li> 
+          <li>Analyst app</li>
+          <li>Public/User facing site</li>
+          <li>Plenty more</li>
+        </ul>
       </div>        
     </div>
 
-    <div class="row">
-      <div class="nine columns">
-        <img srcset="
-          img/sales2.png" alt="sales target app">
-      </div>
-      <div class="three columns sticky">
-        <h5><span class="left-arrow">← </span>about this screen</h5>
-        <h6>A quick wireframe to help plan out how a screen will piece together. This is of the overview screen which collects a quick snapshot of all other areas.</h6>
-      </div>
-    </div>
 
-    <div class="margin-top-8x"></div>
+
     
     <div class="row">
       <div class="nine columns">
-        <img srcset="
-          img/sales3.png 1x, 
-          img/sales3@2x.png 2x
-        " alt="sales target app">
+        <img srcset="img/news4.png" alt="news analysis app">
       </div>
       <div class="three columns sticky">
         <h5><span class="left-arrow">← </span>about this screen</h5>
-        <h6>Financial data broken down into graphs, charts, and an interactive map helps the sales person find what they need effectively.</h6>
+        <h6>Public facing "Front Page". Not all articles here would have a full analysis, but a preliminary rating given without review by an analyst. Releasing public facing analysis of articles were planned for later phases.</h6>
       </div>
     </div>
 
@@ -186,7 +220,15 @@
         <h4>the result</h4>
       </div>
       <div class="eight columns">
-        <p>An application that delivers key information in an effective way that helps the sales team do their job. The overall interface works well in its communication to the user.</p>
+        <p>Starting internally first, the site allowed for a steady inflow of news articles from various sources. The articles filtered through our processing system for:</p>
+        <ul>
+          <li>Sentiment analysis</li>
+          <li>Headline-stance to body-copy matching</li>
+          <li>Source subject bias</li>
+          <li>Origin detection (the original source of the article, as articles are often republished)</li>
+          <li>Key Phrase parsers (for linking articles from various sources and topics in order to get a better snapshot of all information available for a given topic)</li>
+        </ul>
+        <p>The articles can be added to a Project, which is a specific research topic for an analyst to study. Analysis of articles can then be published for the public view, as the client wanted to start opening it up to public use under a subscription model.</p>
       </div>        
     </div>
 

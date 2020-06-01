@@ -138,8 +138,22 @@ a:hover .logo-shadow {
 	    transform: translateY(-1px);
 }
 
+a:active .logo-shadow {
+	box-shadow: none;
+    transform: translateY(1px);
+}
+
 div.social a {
 	border-bottom: none;
+}
+
+ul {
+	list-style-type: disc;
+	list-style-position: outside;
+
+	li {
+		margin-left: 32px;
+	}
 }
 
 

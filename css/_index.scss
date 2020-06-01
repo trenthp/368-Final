@@ -359,6 +359,16 @@ a.social-icon:hover svg {
 	}	
 }
 
+@media (max-width: 1000px) {
+	.news-card,
+	.sales-card,
+	.purchase-card,
+	.consultancy-card,
+	.process-card {
+		box-shadow: $shadow-level-03;	
+	}
+}
+
 @media (max-width: 768px) {
 	.news-card .img-holder {
 	    padding: 8px 0 8px;
